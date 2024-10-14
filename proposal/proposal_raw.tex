@@ -1,0 +1,211 @@
+\documentclass[sigconf]{acmart}
+
+% \usepackage{graphicx} % For graphics (don't need)
+% \usepackage{amsmath} % For formulas (don't need)
+% \usepackage{booktabs} % For formal tables (don't need)
+
+\acmConference[CSPB 4502]{CU CSPB 4502 - Data Mining}{Fall 2024}{Boulder, CO, USA}
+\acmYear{2024}
+\acmMonth{10}
+
+% Meta Information for the document
+\title{Detecting Malicious Behaviors on Ethereum}
+\author{Hallee Ray}
+\affiliation{%
+  \institution{Univeristy of Colorado - Boulder}
+  \city{Boulder}
+  \state{Colorado}
+  \country{USA}
+  \postcode{ZIP code}
+}
+\email{hara7620@colorado.edu}
+
+
+\author{BD Tinsley}
+\affiliation{%
+  \institution{Univeristy of Colorado - Boulder}
+  \city{Boulder}
+  \state{Colorado}
+  \country{USA}
+  \postcode{ZIP code}
+}
+\email{beti7384@colorado.edu}
+
+% More authors can be added here
+% \author{Another Author}
+% \affiliation{%
+%   \institution{Another Institution}
+%   \city{City}
+%   \state{State}
+%   \country{Country}
+%   \postcode{ZIP code}
+% }
+% \email{anotherauthor@example.com}
+
+% \author{Another Author}
+% \affiliation{%
+%   \institution{Another Institution}
+%   \city{City}
+%   \state{State}
+%   \country{Country}
+%   \postcode{ZIP code}
+% }
+% \email{anotherauthor@example.com}
+
+\begin{document}
+
+% abstract
+\begin{abstract}
+This project aims to analyze transaction data from the Ethereum blockchain to detect fraudulent or suspicious activities using data mining techniques. By utilizing real-time data and feature engineering, we will develop models that can predict malicious behaviors, identify trends, and detect anomalies in blockchain transactions. We also aim to enhance our dataset by incorporating public interest data from Google Trends and findings from FBI reports. Our final objective is to build a system that can flag potentially fraudulent wallets and predict suspicious activity before it escalates.
+\end{abstract}
+
+% keywords
+\keywords{Ethereum blockchain, anomaly detection, data mining, prediction modeling, fraud detection, feature engineering, machine learning}
+
+% main content
+\maketitle
+
+\section{Problem Statement/Motivation}
+
+We will mine data from the Ethereum blockchain to discover trends in transactions. Through it, we aim to detect fraudulent or scam-like trends involving investment fraud, kiosk scams, and other malicious behaviors. We have several interesting questions that we hope to answer related to various relationships between features of Ethereum transactions. We would like to explore if there is a correlation between the time of the transaction and the amount of the transaction. This could help us to identify patterns regarding the time of day or night that reports transactions for larger amounts.
+
+Intuition would have us suspect that transactions for large amounts occurring outside of normal trading hours would be more likely to be fraudulent. Another question we seek to explore is, what is the average time between a new coin going live and the first purchase? Exploring this question could inform us about potential pump and dump type of activity. For instance, if there is a higher than average volume of transactions within the first 24 hours of a coin becoming available for trading, this could drive up the cost of the coin and lead to investors quickly selling their coin while the price is inflated.
+
+What are the average values of the transactions during the lifetime of Ethereum, and how do they map to early-stage hype? This question could help us to recognize patterns related to the coin’s health on the market. For coins with historical fraudulent activity, what are the general statistics for the transactions that were reported as fraudulent? This question could help us to generate some general guidelines for activity that should be flagged as potentially fraudulent.
+
+Analyzing these questions will allow us to gain an understanding of Ethereum transactions and be able to predict whether a transaction is likely to be fraudulent.
+
+
+\section{Literative Survey}
+Unfortunately, scams and fraudulent activity in cryptocurrency occur frequently and are difficult to monitor due to the anonymous and decentralized nature of cryptocurrency. The Federal Bureau of Investigation (FBI) and the Homeland Defense \& Security Information Analysis Center (HDIAC) have made efforts to monitor and predict fraudulent behavior in cryptocurrency.
+
+"In February 2022, the FBI formed the Virtual Assets Unit (VAU), a specialized team dedicated to investigating cryptocurrency-related crimes" \cite{FBI2023}. In the report, the FBI identified common types of malicious behaviors using cryptocurrencies: investment fraud, recovery schemes, and kiosk scams. Investment fraud is described as malicious actors who encourage individuals to make “investments” in cryptocurrency. The FBI found that losses from cryptocurrency-related investment fraud schemes reported to the IC3 rose from \$2.57 billion in 2022 to \$3.96 billion in 2023, an increase of 53%.
+
+Recovery schemes involve representatives from fraudulent businesses claiming to provide cryptocurrency tracing and promise an ability to recover lost funds. They request an upfront fee for this service and then immediately cease communication with the sender once the funds are received. Kiosk scams are scams where a criminal actor will direct an individual to withdraw cash from their bank and locate and send money via a kiosk or ATM-like machine. In 2023, the IC3 received more than 5,500 complaints reporting the use of cryptocurrency kiosks, with losses over \$189 million.
+
+Knowing the existence of these scams and monitoring statistical metrics regarding cryptocurrency transactions and fraudulent activity is not sufficient to predict and prevent such scams. The Homeland Defense \& Security Information Analysis Center (HDIAC) has employed various real-time predictive machine learning models and on- and off-chain monitoring to detect fraudulent activity. The HDIAC describes the purpose of the off-chain module as preventing fraud before it occurs, whereas the on-chain module utilizes real-time surveillance to detect fraud after it has occurred \cite{HDIAC2023}.
+
+\section{Proposed Work}
+
+The work that we will need to perform in order to progress through this project involves \textbf{data preprocessing}, \textbf{exploratory data analysis}, \textbf{feature engineering}, \textbf{anomaly detection}, and \textbf{prediction modeling}.
+
+\subsection{Data Preprocessing}
+
+For data preprocessing, there are two steps that will need to be completed: \textbf{data cleaning and preparation}, and \textbf{normalization and standardization}. This can be achieved by handling any missing values in a variety of ways, such as:
+\begin{itemize}
+    \item \textbf{Dropping records} that cannot be filled in through integrating multiple sources.
+    \item \textbf{Filling in missing values} with a predetermined default value.
+    \item \textbf{Imputing missing values} based on similar records.
+\end{itemize}
+Additionally, the fields of each feature will need to be analyzed and converted to the correct \textbf{data types} and formats.
+
+\subsection{Exploratory Data Analysis}
+
+\textbf{Exploratory data analysis} will help us uncover inter- and intra-feature relationships. \textbf{Univariate analysis} and \textbf{visualization} will allow us to identify outliers and anomalous values. Visualizing a \textbf{heatmap} of the correlations between features will allow us to understand general trends between features.
+
+\subsection{Feature Engineering}
+
+An important step in feature engineering is deriving new attributes, such as:
+\begin{itemize}
+    \item New attributes for \textbf{transaction time intervals}, including \textbf{in-degree} and \textbf{out-degree} for sender and recipient addresses.
+    \item Grouping various features according to their \textbf{transaction patterns} and frequency.
+\end{itemize}
+
+\subsection{Anomaly Detection}
+
+One of the main objectives of this project is to detect anomalies that could potentially be fraudulent. Statistical methods such as \textbf{Z-score} and \textbf{Percentile-Based Detection} can be utilized to isolate transaction values of unusually high or low values. We can use the same methods to identify feature values that fall well outside the standard range.
+
+\textbf{Distance-based methods} can be employed to detect anomalies. By defining several dimensions such as \textbf{time\_between\_transactions} and \textbf{gas\_price} (based on gas and value), we can measure the distance between transactions and compare the record to its nearest neighbors using the \textbf{K-Nearest Neighbors (KNN)} methodology. Outliers here will also show interesting trends. 
+
+Using \textbf{K-means Clustering}, we can determine address behavior based on clusters by transaction activity, including:
+\begin{itemize}
+    \item \textbf{Total transaction value}
+    \item \textbf{Transaction frequency}
+    \item \textbf{Gas usage}
+\end{itemize}
+Addresses that fall into distant clusters or small clusters could indicate suspicious behavior.
+
+\subsection{Prediction Modeling}
+
+Finally, we propose \textbf{prediction modeling}. Using statistics defined in \textbf{FBI’s Internet Crime Complaint Annual Reports}, we will enhance our dataset by incorporating fraud patterns from FBI statistics, such as:
+\begin{itemize}
+    \item Prevalence of specific fraud types.
+    \item Trends in fraudulent activity over time.
+\end{itemize}
+Labeling the historical transaction data and using a \textbf{Random Forest} supervised machine learning model will help us discover potential fraudulent activity. Using real-time Ethereum data and our predictive models, we aim to \textbf{predict and mark transactions as potentially fraudulent} as they occur.
+
+\section{Dataset}
+The datasets that we will utilize for this project are an Ethereum ledger that provides real-time transaction data showing transaction type, the sender and recipient wallets, and the transaction amount via API integration \cite{etherscan}. Additionally, we contrast our dataset with maps of public interest in specific Ethereum-built cryptocurrencies using Google Trends \cite{googletrends}. Finally, we will compare our results to FBI findings to determine if we can detect trends before complaints of fraudulent activity using the FBI Fraud Report \cite{FBIFraudReport2023}.
+
+\section{Evaluation Methods}
+To quantitatively evaluate the performance of our fraud detection models, we will employ several metrics and methods:
+
+\subsection{Performance Metrics}
+We will assess model performance using standard classification metrics such as:
+\begin{itemize}
+    \item \textbf{Accuracy}: The ratio of correctly predicted instances over the total instances.
+    \item \textbf{Precision and Recall}: Critical in fraud detection, precision measures the fraction of actual frauds in the predicted fraud cases, while recall measures the fraction of actual frauds correctly identified. The \textbf{F1-Score}, a harmonic mean of precision and recall, will also be calculated to balance both.
+    \item \textbf{ROC Curve \& AUC}: We will use the ROC curve to visualize the trade-off between true positive and false positive rates and calculate the AUC as a quantitative measure of model discrimination.
+\end{itemize}
+
+\subsection{Cross-Validation}
+We will perform \textbf{k-fold cross-validation} to ensure that our model's performance generalizes well across different subsets of data. This will mitigate overfitting and provide more robust performance metrics.
+
+\subsection{Confusion Matrix}
+A \textbf{confusion matrix} will be generated to break down our predictions into true positives, false positives, true negatives, and false negatives. This allows us to analyze misclassifications in more detail.
+
+\subsection{Threshold Tuning}
+By adjusting the \textbf{decision threshold}, we will explore how varying thresholds impact precision and recall, allowing us to tune the model based on the relative costs of false positives and false negatives.
+
+\subsection{Anomaly Detection Metrics}
+For anomaly detection, we will calculate \textbf{Z-scores} and use \textbf{distance-based metrics} (e.g., K-Nearest Neighbors) to measure how well the model isolates outliers from the normal transaction patterns.
+
+\subsection{Scalability and Time Complexity}
+We will evaluate the \textbf{time complexity} of our models and their ability to scale by testing performance on progressively larger subsets of Ethereum transactions.
+
+\subsection{Feature Importance}
+Using a \textbf{Random Forest} model, we will assess the importance of various features (e.g., transaction amount, gas price, time intervals) in predicting fraudulent behavior. Feature importance scores will be used to identify the most impactful features.
+
+\subsection{Baseline Comparison}
+We will compare the performance of our models against simpler baselines such as logistic regression, measuring improvements in precision, recall, and AUC over the baseline models.
+
+\subsection{Statistical Significance}
+We will conduct \textbf{paired t-tests} and \textbf{ANOVA tests} to determine whether improvements in performance metrics between different models are statistically significant.
+
+
+\section{Tools}
+The programming language that we will use for this project is \textbf{Python}, the beloved language for data science projects. It has a vast ecosystem of libraries for data analysis and integrates well with third-party services. Two useful libraries for our objectives include \textbf{SciPy} and \textbf{NumPy}. Both extend Python to include a range of computing tools to handle matrix operations, statistical analysis, optimization, and signal processing. Additionally, the \textbf{Pandas} library will be necessary in our exploration of the data due to its ability to handle structured datasets. It will be useful in most steps of this project but will especially excel in data cleaning, EDA, and feature engineering.
+
+Due to the size of the dataset, we may encounter some limitations with Pandas’ processing speed. Due to the size of the Ethereum blockchain ledger, we will likely be viewing and previewing our work within small time frames to take advantage of Python and Pandas processing power alone. However, when evaluating larger time frames of Ethereum transactions, \textbf{Dask} will be necessary to parallelize Python processing.
+
+Visualization libraries such as \textbf{Matplotlib}, \textbf{Seaborn}, and \textbf{Plotly} will be greatly helpful in our data exploration and performance analysis. Data visualization will be necessary to display outliers and trends we uncover. Matplotlib will be useful for rudimentary visualizations, but we will likely reach for Seaborn for more control over aesthetics and Plotly for interactive visualizations.
+
+\textbf{GitHub} will be a necessary tool for this project, both from a grading perspective and as a way to manage multiple contributors to the same codebase by offering a single source of truth, backups, and trackable changes. Admittedly, the task for \textbf{Snowflake} may be beyond the need for this project, but due to the large volume of data in evaluating Ethereum transactions, we may need more scalability than our standard configuration.
+
+\section{Milestones}
+\textbf{Milestone 0: Proposal (October 14)}\\
+This encompasses parts 1 and 2 of the project requirements. This integrates any peer or instructor feedback from our initial proposal in order to finalize and improve our project proposition.
+
+\textbf{Milestone 1: Pull Dataset \& Data Cleaning (October 18)}\\
+In this milestone, we determine the specific windows of Ethereum transactions we will use for the project and clean them in order to successfully employ our data mining objectives.
+
+\textbf{Milestone 2 \& 3: EDA \& Feature Engineering (October 25)}\\
+This milestone will allow us to gain insights into the dataset and uncover important information regarding the features. This milestone is a crucial step toward uncovering patterns and relationships between features.
+
+\textbf{Milestone 4: Progress Report (October 28)}\\
+As required by the course, this will be a mid-project check-in as defined in part 3 of the project requirements. This will be a good chance for us to review our progress, review our plan, and reassess our goals.
+
+\textbf{Milestone 5: Anomaly Detection (November 8)}\\
+This milestone is another important step toward project completion. By this point, we should all have a decent understanding of the data and which attributes are most implicated in fraudulent transactions, and we can shift focus to understanding which metrics would indicate suspicious activity.
+
+\textbf{Milestone 6: Prediction Modeling \& Analysis (December 2)}\\
+Our goal to implement prediction modeling is contingent upon the successful completion of milestone 5. This milestone generally encompasses how we could apply the results of data mining in practice.
+
+\textbf{Milestone 7: Final Report (December 9)}\\
+As required by the course, this final report will highlight our procedures, findings, and next steps for this project. It will provide an opportunity to reflect on our processes, what did and did not work well, and provide an overview of our understanding of the material.
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references} 
+
+\end{document}
