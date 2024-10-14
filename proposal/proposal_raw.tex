@@ -18,7 +18,7 @@
 \title{Detecting Malicious Behaviors on Ethereum}
 \author{Hallee Ray}
 \affiliation{%
-  \institution{Univeristy of Colorado - Boulder}
+  \institution{University of Colorado - Boulder}
   \city{Boulder}
   \state{Colorado}
   \country{USA}
@@ -29,7 +29,7 @@
 
 \author{BD Tinsley}
 \affiliation{%
-  \institution{Univeristy of Colorado - Boulder}
+  \institution{University of Colorado - Boulder}
   \city{Boulder}
   \state{Colorado}
   \country{USA}
@@ -37,17 +37,15 @@
 }
 \email{beti7384@colorado.edu}
 
-% More authors can be added here
-% \author{Another Author}
-% \affiliation{%
-%   \institution{Another Institution}
-%   \city{City}
-%   \state{State}
-%   \country{Country}
-%   \postcode{ZIP code}
-% }
-% \email{anotherauthor@example.com}
-
+\author{Evan Bean}
+\affiliation{%
+  \institution{University of Colorado - Boulder}
+  \city{Boulder}
+  \state{Colorado}
+  \country{USA}
+  \postcode{ZIP code}
+}
+\email{evbe5723@colorado.edu}
 % \author{Another Author}
 % \affiliation{%
 %   \institution{Another Institution}
@@ -82,6 +80,7 @@ Additionally, we are interested in the average values of transactions during the
 By analyzing these questions, we aim to gain a deeper understanding of Ethereum transactions and improve our ability to predict whether a transaction is likely to be fraudulent.
 
 \section{Literative Survey}
+\subsection{The Literature of Fraud Data and Identification}
 Unfortunately, scams and fraudulent activity in cryptocurrency occur frequently and are difficult to monitor due to the anonymous and decentralized nature of cryptocurrency. The Federal Bureau of Investigation (FBI) and the Homeland Defense \& Security Information Analysis Center (HDIAC) have made efforts to monitor and predict fraudulent behavior in cryptocurrency.
 
 "In February 2022, the FBI formed the Virtual Assets Unit (VAU), a specialized team dedicated to investigating cryptocurrency-related crimes" \cite{FBI2023}. In the report, the FBI identified common types of malicious behaviors using cryptocurrencies: investment fraud, recovery schemes, and kiosk scams. Investment fraud is described as malicious actors who encourage individuals to make “investments” in cryptocurrency. The FBI found that losses from cryptocurrency-related investment fraud schemes reported to the IC3 rose from \$2.57 billion in 2022 to \$3.96 billion in 2023, an increase of 53%.
@@ -89,6 +88,14 @@ Unfortunately, scams and fraudulent activity in cryptocurrency occur frequently 
 Recovery schemes involve representatives from fraudulent businesses claiming to provide cryptocurrency tracing and promise an ability to recover lost funds. They request an upfront fee for this service and then immediately cease communication with the sender once the funds are received. Kiosk scams are scams where a criminal actor will direct an individual to withdraw cash from their bank and locate and send money via a kiosk or ATM-like machine. In 2023, the IC3 received more than 5,500 complaints reporting the use of cryptocurrency kiosks, with losses over \$189 million.
 
 Knowing the existence of these scams and monitoring statistical metrics regarding cryptocurrency transactions and fraudulent activity is not sufficient to predict and prevent such scams. The Homeland Defense \& Security Information Analysis Center (HDIAC) has employed various real-time predictive machine learning models and on- and off-chain monitoring to detect fraudulent activity. The HDIAC describes the purpose of the off-chain module as preventing fraud before it occurs, whereas the on-chain module utilizes real-time surveillance to detect fraud after it has occurred \cite{HDIAC2023}.
+\subsection{The Literature of Formal Fraud Detection Methods}
+\subsubsection{Formal Methods}
+In a manuscript submitted in August of 2024, Jin et. al from Zhejiang University of Technology, China discuss methods of designing fraudulent action detection system in the Ethereum Blockchain. Noting, as we have, that many forms of fraud require expert systems with subject matter expertise to rule on what seems “irregular” and what does not, Jin suggested using transaction-graph-based methods of anomaly detection to target individual malicious accounts and behaviors. At its core, the methodology is pattern recognition and segregation. The challenge of this approach, however, is gracefully handling complex, frequent, and imbalanced data. As one might expect, some perfectly good actors will trade at a low volume and frequency – consider the armchair cryptocurrency enthusiast, while other good actors will technical capabilities and more personal investment in cryptocurrency might seek out arbitrage, small-margin, or options plays, all of which characteristically “look” very different. To be able to segregate the good from the bad, one must categorize these different behavioral patterns, normalize the weighting that may be associated with high volumes of varying types of trades or traders so that a predictive engine is not overly focused on a majority, but rather equally focused on varying patterns.
+Within graph analysis, we will follow and expand upon the methodologies presented by Jin. This will be discussed in greater detail below.
+\cite{EnhancingEthereumFraudDetection}
+\subsubsection{Formal Methods}
+Many of the methods that will be used and expanded upon are introduced in a centralized repository for blockchain transaction analysis. We have included this repository in our citations and will expand upon it further through the duration of this project.
+\cite{LiteratureRepo}
 
 \section{Proposed Work}
 
