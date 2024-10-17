@@ -1,32 +1,34 @@
-import requests
-import json
+## TODO: remove this file if the bigquery dataset in /data is sufficient for our needs
 
-## PRO CALL - cannot use with free Etherscan account ##
-def daily_transaction_count(startdate, enddate, key):
-    url = f"https://api.etherscan.io/api?module=stats&action=dailytx&startdate={startdate}&enddate={enddate}&sort=asc&apikey={key}"
+# import requests
+# import json
 
-    try:
-        response = requests.request("GET", url)
-    except requests.exceptions.RequestException as e:
-        print(f"ERROR: {e}")
+# ## PRO CALL - cannot use with free Etherscan account ##
+# def daily_transaction_count(startdate, enddate, key):
+#     url = f"https://api.etherscan.io/api?module=stats&action=dailytx&startdate={startdate}&enddate={enddate}&sort=asc&apikey={key}"
 
-    return response.json()
-########################################################
+#     try:
+#         response = requests.request("GET", url)
+#     except requests.exceptions.RequestException as e:
+#         print(f"ERROR: {e}")
+
+#     return response.json()
+# ########################################################
 
 
-def total_supply(apikey):
-    url = f"https://api.etherscan.io/api?module=stats&action=ethsupply&apikey={apikey}"
+# def total_supply(apikey):
+#     url = f"https://api.etherscan.io/api?module=stats&action=ethsupply&apikey={apikey}"
 
-    try:
-        response = requests.request("GET", url)
-    except requests.exceptions.RequestException as e:
-        print(f"ERROR: {e}")
+#     try:
+#         response = requests.request("GET", url)
+#     except requests.exceptions.RequestException as e:
+#         print(f"ERROR: {e}")
         
-    return response.json()
+#     return response.json()
 
-if __name__ == "__main__":
-    apikey = "DC49BBKK2FHZ7JXV537MTVEH4ER66NX9H6"
+# if __name__ == "__main__":
+#     apikey = "DC49BBKK2FHZ7JXV537MTVEH4ER66NX9H6"
 
-    response = total_supply(apikey)
-    print(f"Response from total_supply: {response}")
-    print(response.get("result"))
+#     response = total_supply(apikey)
+#     print(f"Response from total_supply: {response}")
+#     print(response.get("result"))
