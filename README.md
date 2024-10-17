@@ -39,15 +39,15 @@ The packages listed in the project proposal have already been installed in the p
 
 1. Insure you have access to the `install_package.sh` file:
 
-```
-chmod +x install_dep.sh
-```
+    ```
+    chmod +x install_dep.sh
+    ```
 
 1. Run the `install_package.sh` script from the root level of this project directory:
 
-```
-./install_package.sh
-```
+    ```
+    ./install_package.sh
+    ```
 
 It will prompt you on the packages to install and adequately find the version for the purposes of this project. Conversely, if you wish to update the `requirements.txt` file yourself, feel free.
 
