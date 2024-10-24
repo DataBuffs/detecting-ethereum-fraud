@@ -1,0 +1,3 @@
+Data directory for git to track.
+
+pull_transactions.sh script will create the files in this directory.

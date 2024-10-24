@@ -5,10 +5,6 @@ CSPB 4502
 CU Fall 2024
 
 
-## Dataset
-
-The dataset is provided from the [Ethereum Cryptocurrency](https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain) BigQuery public dataset. Most of our work will be done using `data/transactions.csv` however, all data is included.
-
 ## Getting Set Up
 
 ### Virtual Environment
@@ -33,21 +29,36 @@ The dataset is provided from the [Ethereum Cryptocurrency](https://console.cloud
     deactivate
     ```
 
-### Installing new packages
+### Pulling Ethereum Transactions Locally
 
-The packages listed in the project proposal have already been installed in the project. You should have already installed them by running the `pip install -r requirements.txt` command above. If you need to install more packages:
+Due to the size of the dataset, we will not be committing it to the repo, therefore we will need to pull it down locally to each machine working on it. We will be using the `ethereum-etl` package in conjunction with the Infura API to stream the Ethereum transaction ledger locally.
 
-1. Insure you have access to the `install_package.sh` file:
-
-    ```
-    chmod +x install_dep.sh
-    ```
-
-1. Run the `install_package.sh` script from the root level of this project directory:
+1. Insure you have access to the `scripts/create_env.sh` and `scripts/pull_transactions.sh` file:
 
     ```
-    ./install_package.sh
+    chmod +x scripts/create_env.sh
+    chmod +x scripts/pull_transactions.sh
     ```
 
-It will prompt you on the packages to install and adequately find the version for the purposes of this project. Conversely, if you wish to update the `requirements.txt` file yourself, feel free.
+1. Run the `create_env.sh` script from the root level of this project directory:
+
+    ```
+    ./scripts/create_env.sh
+    ```
+
+    It will ask you for your `INFURA_API_KEY`. Ask [BD](https://github.com/benjtinsley) for one or set up your own at [Infura.io](https://app.infura.io/).
+    
+    The `create_env` script will set up an `.env` file for environment variables and place the `INFURA_API_KEY` for later use. You can verify the key is set by opening the `.env` file in the root level of this project directory and check for the `INFURA_API_KEY` variable.
+    
+    __Note:__ if you set up your own Infura API key on the free plan, you will not be able to pull an adequate amount of transactions for the purposes of this project.
+
+1. Run the `pull_transactions.sh` script from the root level of this project directory:
+
+    ```
+    ./scripts/pull_transactions.sh
+    ```
+
+    This will pull down the Ethereum transaction ledger from Infura and save it to `data/eth_transactions.csv` using the `INFURA_API_KEY` in the `.env` file.
+
+    __Note:__ this will take several minutes to complete, but will only need to be done once.
 
