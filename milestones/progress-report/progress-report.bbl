@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{5}
+\begin{thebibliography}{8}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,6 +36,41 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[{Chenxiang Jin, Jiajun Zhou, Chenxuan Xie, Shanqing Yu, Qi Xuan,
+  Xiaoniu Yang}(2024)]%
+        {EnhancingEthereumFraudDetection}
+\bibfield{author}{\bibinfo{person}{{Chenxiang Jin, Jiajun Zhou, Chenxuan Xie,
+  Shanqing Yu, Qi Xuan, Xiaoniu Yang}}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Enhancing Ethereum Fraud Detection via Generative and
+  Contrastive Self-supervision}.
+\newblock
+\newblock
+\newblock
+\shownote{Available at: \url{https://arxiv.org/abs/2408.00641}}.
+
+
+\bibitem[{Ethereum Improvement Proposals}(2019)]%
+        {LondonHardfork}
+\bibfield{author}{\bibinfo{person}{{Ethereum Improvement Proposals}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{EIP-1559: Fee market change for ETH 1.0 chain}.
+\newblock
+\newblock
+\newblock
+\shownote{Available at: \url{https://eips.ethereum.org/EIPS/eip-1559}}.
+
+
+\bibitem[{Ethereum Improvement Proposals}(2022)]%
+        {ProtoDanksharding}
+\bibfield{author}{\bibinfo{person}{{Ethereum Improvement Proposals}}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{EIP-4844: Shard Blob Transactions}.
+\newblock
+\newblock
+\newblock
+\shownote{Available at: \url{https://eips.ethereum.org/EIPS/eip-4844}}.
+
 
 \bibitem[{Etherscan}(2024)]%
         {etherscan}

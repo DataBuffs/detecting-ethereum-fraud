@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  14 OCT 2024 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  28 OCT 2024 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**proposal_raw.tex
-(./proposal_raw.tex
+**progress-report.tex
+(./progress-report.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/local/texlive/2023/texmf-dist/tex/latex/acmart/acmart.cls
@@ -732,8 +732,8 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box61
 )
-(./proposal_raw.aux)
-\openout1 = `proposal_raw.aux'.
+(./progress-report.aux)
+\openout1 = `progress-report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 62.
 LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line
@@ -851,9 +851,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package hyperref Info: Link coloring OFF on input line 62.
 
-(./proposal_raw.out) (./proposal_raw.out)
+(./progress-report.out) (./progress-report.out)
 \@outlinefile=\write4
-\openout4 = `proposal_raw.out'.
+\openout4 = `progress-report.out'.
 
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -965,51 +965,47 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 96.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 96.
-
-
-Package natbib Warning: Citation `EnhancingEthereumFraudDetection' on page 1 un
-defined on input line 98.
-
-[1.1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr
-/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/
-local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
+ [1.1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/us
+r/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr
+/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}]
-
-
-Package natbib Warning: Citation `LiteratureRepo' on page 2 undefined on input 
-line 101.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 110.
+(Font)              scaled to size 9.0pt on input line 107.
 
-Overfull \hbox (1.87068pt too wide) in paragraph at lines 122--123
+Overfull \hbox (1.87068pt too wide) in paragraph at lines 119--120
 \T1/LinuxLibertineT-TLF/b/n/9 (-20) in-degree \T1/LinuxLibertineT-TLF/m/n/9 (-2
 0) and \T1/LinuxLibertineT-TLF/b/n/9 (-20) out-degree \T1/LinuxLibertineT-TLF/m
 /n/9 (-20) for sender and re-cip-i-ent ad-dresses. 
  []
 
 
-Overfull \hbox (6.90125pt too wide) in paragraph at lines 129--130
+Overfull \hbox (6.90125pt too wide) in paragraph at lines 126--127
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) By defin-ing sev-eral di-men-sions such as 
 \T1/LinuxLibertineT-TLF/b/n/9 (-20) time_between_transactions
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 160.
+(Font)              scaled to size 7.0pt on input line 158.
 [2.2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [3.3]
+Underfull \hbox (badness 10000) in paragraph at lines 245--252
 
-(/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-)
-(/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-utf8.def
-File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [3.3]
-(./proposal_raw.bbl)
+ []
 
-Package natbib Warning: There were undefined citations.
+<m4-correlation-matrix.png, id=165, 451.6875pt x 397.485pt>
+File: m4-correlation-matrix.png Graphic file (type png)
+<use m4-correlation-matrix.png>
+Package pdftex.def Info: m4-correlation-matrix.png  used on input line 258.
+(pdftex.def)             Requested size: 192.91872pt x 169.7689pt.
+
+Class acmart Warning: A possible image without description on input line 261.
+
+(./progress-report.bbl [4.4 <./m4-correlation-matrix.png>])
+
+Class acmart Warning: Some images may lack descriptions.
 
 
 Class acmart Warning: ACM reference format is mandatory 
@@ -1020,32 +1016,28 @@ Class acmart Warning: ACM reference format is mandatory
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
-[4.4]
 
-LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (3 not 4).
-               Rerun to correct this.
-
-(./proposal_raw.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Overfull \vbox (1.1135pt too high) has occurred while \output is active []
 
 
-Package rerunfilecheck Warning: File `proposal_raw.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `proposal_raw.out':
-(rerunfilecheck)             Before: 893DF0F25756DEF45ECCEB9C900351EC;3667
-(rerunfilecheck)             After:  6269558E3C711345E2A86660C27D0BD4;4340.
+(/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
+)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-utf8.def
+File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
+) [5.5]
+(./progress-report.aux)
+Package rerunfilecheck Info: File `progress-report.out' has not changed.
+(rerunfilecheck)             Checksum: AEC3BD1D2194CF6420675FC0AB82AA4A;5046.
  ) 
 Here is how much of TeX's memory you used:
- 20983 strings out of 476025
- 340422 string characters out of 5790017
+ 21032 strings out of 476025
+ 341537 string characters out of 5790017
  1882388 words of memory out of 5000000
- 40581 multiletter control sequences out of 15000+600000
- 617899 words of font info for 258 fonts, out of 8000000 for 9000
+ 40610 multiletter control sequences out of 15000+600000
+ 618718 words of font info for 264 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 85i,12n,131p,1392b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,12n,131p,1395b,689s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolinumT
 .pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBiolin
 umTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBi
@@ -1053,10 +1045,10 @@ olinumTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/L
 inLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/liberti
 ne/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/ne
 wtx/txsys.pfb>
-Output written on proposal_raw.pdf (4 pages, 365583 bytes).
+Output written on progress-report.pdf (5 pages, 428904 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 51401 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 51462 words of extra memory for PDF output out of 51595 (max. 10000000)
 

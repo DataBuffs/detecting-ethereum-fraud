@@ -1,6 +1,6 @@
 \documentclass[sigconf]{acmart}
 
-% \usepackage{graphicx} % For graphics (don't need)
+\usepackage{graphicx} % For graphics
 % \usepackage{amsmath} % For formulas (don't need)
 % \usepackage{booktabs} % For formal tables (don't need)
 
@@ -96,9 +96,6 @@ Knowing the existence of these scams and monitoring statistical metrics regardin
 In a manuscript submitted in August of 2024, Jin et. al from Zhejiang University of Technology, China discuss methods of designing fraudulent action detection system in the Ethereum Blockchain. Noting, as we have, that many forms of fraud require expert systems with subject matter expertise to rule on what seems “irregular” and what does not, Jin suggested using transaction-graph-based methods of anomaly detection to target individual malicious accounts and behaviors. At its core, the methodology is pattern recognition and segregation. The challenge of this approach, however, is gracefully handling complex, frequent, and imbalanced data. As one might expect, some perfectly good actors will trade at a low volume and frequency – consider the armchair cryptocurrency enthusiast, while other good actors will technical capabilities and more personal investment in cryptocurrency might seek out arbitrage, small-margin, or options plays, all of which characteristically “look” very different. To be able to segregate the good from the bad, one must categorize these different behavioral patterns, normalize the weighting that may be associated with high volumes of varying types of trades or traders so that a predictive engine is not overly focused on a majority, but rather equally focused on varying patterns.
 Within graph analysis, we will follow and expand upon the methodologies presented by Jin. This will be discussed in greater detail below.
 \cite{EnhancingEthereumFraudDetection}
-\subsubsection{Formal Methods}
-Many of the methods that will be used and expanded upon are introduced in a centralized repository for blockchain transaction analysis. We have included this repository in our citations and will expand upon it further through the duration of this project.
-\cite{LiteratureRepo}
 
 \section{Proposed Work}
 
@@ -216,6 +213,56 @@ Our goal to implement prediction modeling is contingent upon the successful comp
 \textbf{Milestone 7: Final Report (December 9)}\\
 As required by the course, this final report will highlight our procedures, findings, and next steps for this project. It will provide an opportunity to reflect on our processes, what did and did not work well, and provide an overview of our understanding of the material.
 
+
+\section{Proposal Review}
+\subsection{Milestones}
+Two additional milestones not included in the project proposal, but are required for the course are added:
+
+\textbf{Milestone 8: Presentation (December 9)}\\
+As required by the course, this the final presentation of our findings. Originally omitted in the project proposal.
+
+\textbf{Milestone 9: Project \& Code Description (December 9)}\\
+As required by the course, this final code update for the project along with links to presentation, final report and outline of our findings. Originally omitted in the project proposal.
+
+\section{Milestones Completed}
+\textbf{Milestone 0: Proposal}\\
+This was the prior deliverable and was completed October 14, 2024.
+
+\textbf{Milestone 1: Pull Dataset \& Data Cleaning}\\
+This milestone proved more challenging than anticipated. Ethereum transaction data is abundant and accessible, but only through paid third party services or solutions that require storage well beyond the common size on typical home laptops and computers. We initially worked with a sample dataset of 500 transactions, but knew the findings would not be adequate for later milestones. We used the sample dataset for data cleaning purposes. We opted for a paid service for streaming access to pull approximately 140,000 records daily, until our fetch limits are reached. Through this, we can select a high degree of transactions from specific windows to validate our findings and develop and train a prediction model.
+
+Due to the high degree of validation in a blockchain transaction, we found the values to be high fidelity and trustworthy. As Ethereum evolves, new attributes are added to each transaction and we were able to remove several null value attributes that were added in the London Hard Fork update \cite{LondonHardfork} (integrated August 2021) and the Proto-Danksharding update \cite{ProtoDanksharding} (integrated March 2024). Noting that we will need to adequately include these attributes in windows that occur after the update timestamp, for the initial portion of our work we cleaned these features.
+
+Completed October 24, 2024.
+
+\textbf{Milestone 2: EDA}\\
+Completed October 27, 2024.
+
+\textbf{Milestone 4: Progress Report}\\
+This is self-referential as this progress report correlates to this milestone. Completed October 28, 2024.
+
+\section{Milestones Todo}
+\textbf{Milestone 3: Feature Engineering (October 25)}\\
+Slated to be completed by October 25, we are running behind schedule completing this milestone. However, due to high degree of fidelity in the dataset, we believe we can make up for lost time
+\textbf{Milestone 5: Anomaly Detection (November 8)}\\
+\textbf{Milestone 6: Prediction Modeling \& Analysis (December 2)}\\
+\textbf{Milestone 7: Presentation (December 9)}\\
+\textbf{Milestone 8: Final Report (December 9)}\\
+\textbf{Milestone 9: Project \& Code Description (December 9)}\\
+
+\section{Results so far}
+We found the correlation matrices fails to uncover interesting correlations between attributes, specifically that transaction value is not strongly correlated with any one feature. Our preliminary feature correlation matrix, Figure~\ref{fig:m4CorrelationMatrix}, shows correlations that are intuitive such as block\_number being strongly correlated to transaction\_month. Additionally, there is a strong negative correlation between transaction month and transaction day, which 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{m4-correlation-matrix.png}
+    \caption{Correlation Matrix of features showing intuitive correlations}
+    \label{fig:m4CorrelationMatrix}
+\end{figure}
+
+We have also discovered the importance of the nonce attribute, which increments for each wallet on every transaction. We can use this to track wallets with a high degree of transactions, despite many of them happening prior to the start of the window of transactions we are observing, as well as wallets completing their first transaction. We believe both max and min nonce values in a given window will reveal interesting trends.
+
+Furthermore, tracking gas, or the computational effort to execute the given transaction, is an interesting attribute to track in correlation with transaction value. As a high transaction value and low gas may reveal interesting trends, as will the inverse. In our initial EDA, we found no strong correlation between gas and value.
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{references} 
 
