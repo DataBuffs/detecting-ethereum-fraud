@@ -1,6 +1,7 @@
 \documentclass[sigconf]{acmart}
 
 \usepackage{graphicx} % For graphics
+\usepackage{float} % For graphics placement, et al.
 % \usepackage{amsmath} % For formulas (don't need)
 % \usepackage{booktabs} % For formal tables (don't need)
 
@@ -251,18 +252,77 @@ Slated to be completed by October 25, we are running behind schedule completing 
 \textbf{Milestone 9: Project \& Code Description (December 9)}\\
 
 \section{Results so far}
-We found the correlation matrices fails to uncover interesting correlations between attributes, specifically that transaction value is not strongly correlated with any one feature. Our preliminary feature correlation matrix, Figure~\ref{fig:m4CorrelationMatrix}, shows correlations that are intuitive such as block\_number being strongly correlated to transaction\_month. Additionally, there is a strong negative correlation between transaction month and transaction day, which 
+\subsection{Correlations}
+We found that the correlation matrices fail to uncover interesting correlations between attributes, specifically that transaction value is not strongly correlated with any one feature. Our preliminary feature correlation matrix, shown in Figure~\ref{fig:m4CorrelationMatrix}, reveals intuitive correlations, such as \texttt{block\_number} being strongly correlated with \texttt{transaction\_month}. Additionally, there is a strong negative correlation between \texttt{transaction\_month} and \texttt{transaction\_day}, which suggests temporal clustering of certain types of transactions.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\linewidth]{m4-correlation-matrix.png}
-    \caption{Correlation Matrix of features showing intuitive correlations}
+    \caption{Correlation matrix of features showing intuitive correlations.}
     \label{fig:m4CorrelationMatrix}
 \end{figure}
 
-We have also discovered the importance of the nonce attribute, which increments for each wallet on every transaction. We can use this to track wallets with a high degree of transactions, despite many of them happening prior to the start of the window of transactions we are observing, as well as wallets completing their first transaction. We believe both max and min nonce values in a given window will reveal interesting trends.
 
-Furthermore, tracking gas, or the computational effort to execute the given transaction, is an interesting attribute to track in correlation with transaction value. As a high transaction value and low gas may reveal interesting trends, as will the inverse. In our initial EDA, we found no strong correlation between gas and value.
+
+\subsection{Gas distributions}
+Furthermore, tracking \texttt{gas} (the computational effort required to execute a transaction) is an interesting attribute to examine in correlation with transaction value. A high transaction value paired with low gas may reveal unique patterns, as could the inverse. In our initial EDA, we found no strong correlation between \texttt{gas} and \texttt{value}.
+
+We created several distributions of gas-related values, examining both \texttt{gas usage} (the total computational effort required for a transaction) in Figure~\ref{fig:gasUsage} and \texttt{gas price} (the amount a wallet is willing to pay to expedite transactions) in Figure~\ref{fig:gasPrice}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M4-normalized-distro-gas.png}
+    \caption{Distribution of gas usage, showing a high frequency in low gas prices. The outliers may reveal valuable insights.}
+    \label{fig:gasUsage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M4-normalized-distro-gas-price.png}
+    \caption{Distribution of gas price, showing a high frequency in low gas prices. Wallets paying significantly more for faster transactions could indicate interesting trends.}
+    \label{fig:gasPrice}
+\end{figure}
+
+\subsection{Timeplot}
+While not directly useful, a time plot of transactions over time in Figure~\ref{fig:timePlot} demonstrates how a brief period represents approximately \( \approx 139,000 \) transactions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M4-transactions-timeplot.png}
+    \caption{Daily transactions between August 17, 2015, and September 13, 2015.}
+    \label{fig:timePlot}
+\end{figure}
+
+\subsection{Active wallets}
+Identifying the most active senders and receivers is highly informative. As mentioned earlier, fraud may occur within the margins (somewhere between the most and least frequent transactors). By identifying high-traffic vendors or entities, we can remove valid businesses from the dataset or magnify their holdings if they appear compromised. Figure~\ref{fig:activeSenders} shows the most active senders, and Figure~\ref{fig:activeReceivers} shows the most active receivers.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M4-active-sender.png}
+    \caption{10 most active sender wallets.}
+    \label{fig:activeSenders}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M4-active-receiver.png}
+    \caption{10 most active receiver wallets.}
+    \label{fig:activeReceivers}
+\end{figure}
+
+\subsection{Nonce distribution}
+We have also discovered the importance of the \texttt{nonce} attribute, which increments for each wallet with every transaction. We can use this to track wallets with a high degree of transactions, even if many of them occurred before the start of our observed window. This also allows us to identify wallets completing their first transaction. We believe both the maximum and minimum \texttt{nonce} values within a given window will reveal interesting trends.
+
+Examining the nonce distribution reveals a high degree of first-time senders, as shown in Figure~\ref{fig:nonceDistro}. This pattern may indicate a trend in creating "burner" wallets to avoid detection. Closer analysis of low-nonce transactions could provide more insight.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M4-nonce-distro.png}
+    \caption{Distribution of nonce values, highlighting a high proportion of first-time senders.}
+    \label{fig:nonceDistro}
+\end{figure}
+
+
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{references} 
 
