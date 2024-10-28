@@ -38,6 +38,7 @@ ipfshttpclient==0.8.0a2
 ipykernel==6.29.5
 ipython==8.28.0
 jedi==0.19.1
+joblib==1.4.2
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
 jupyter_client==8.6.3
@@ -75,12 +76,14 @@ referencing==0.35.1
 requests==2.32.3
 rlp==2.0.1
 rpds-py==0.20.0
+scikit-learn==1.5.2
 scipy==1.14.1
 seaborn==0.13.2
 six==1.16.0
 stack-data==0.6.3
 tabulate==0.9.0
 tenacity==9.0.0
+threadpoolctl==3.5.0
 toolz==1.0.0
 tornado==6.4.1
 traitlets==5.14.3
