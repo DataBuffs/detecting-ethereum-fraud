@@ -255,14 +255,29 @@ Slated to be completed by October 25, we are running behind schedule completing 
 \subsection{Correlations}
 We found that the correlation matrices fail to uncover interesting correlations between attributes, specifically that transaction value is not strongly correlated with any one feature. Our preliminary feature correlation matrix, shown in Figure~\ref{fig:m4CorrelationMatrix}, reveals intuitive correlations, such as \texttt{block\_number} being strongly correlated with \texttt{transaction\_month}. Additionally, there is a strong negative correlation between \texttt{transaction\_month} and \texttt{transaction\_day}, which suggests temporal clustering of certain types of transactions.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{m4-correlation-matrix.png}
+    \includegraphics[width=0.8\linewidth]{M4-correlation-matrix.png}
     \caption{Correlation matrix of features showing intuitive correlations.}
     \label{fig:m4CorrelationMatrix}
 \end{figure}
 
+\subsection{Transaction values}
+Finding trends among transaction values will allow us to identify potentially fraudulent wallets and transactions. These graphs allow us to determine a baseline average transaction value and identify average transaction values for each sender. Figure~\ref{fig:transactionTop10} shows the senders with the 10 highest average transaction values in comparison with Figure~\ref{fig:transactionAll}, which shows all senders. Further analysis into the number of transactions that each of these senders has executed, as well as correlations with other features of the data set could help us to identify patterns in transaction values and sender types.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M4-transaction-value-top10.png}
+    \caption{Transaction value of the 10 most valuable transactions against the average transaction value.}
+    \label{fig:transactionTop10}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M4-transaction-value-normalized.png}
+    \caption{All transaction values against the average transaction value.}
+    \label{fig:transactionAll}
+\end{figure}
 
 \subsection{Gas distributions}
 Furthermore, tracking \texttt{gas} (the computational effort required to execute a transaction) is an interesting attribute to examine in correlation with transaction value. A high transaction value paired with low gas may reveal unique patterns, as could the inverse. In our initial EDA, we found no strong correlation between \texttt{gas} and \texttt{value}.

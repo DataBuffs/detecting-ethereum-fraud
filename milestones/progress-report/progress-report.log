@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  28 OCT 2024 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  28 OCT 2024 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1006,82 +1006,101 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<m4-correlation-matrix.png, id=165, 451.6875pt x 397.485pt>
-File: m4-correlation-matrix.png Graphic file (type png)
-<use m4-correlation-matrix.png>
-Package pdftex.def Info: m4-correlation-matrix.png  used on input line 260.
+<M4-correlation-matrix.png, id=189, 451.6875pt x 397.485pt>
+File: M4-correlation-matrix.png Graphic file (type png)
+<use M4-correlation-matrix.png>
+Package pdftex.def Info: M4-correlation-matrix.png  used on input line 260.
 (pdftex.def)             Requested size: 192.91872pt x 169.7689pt.
 
 
 Class acmart Warning: A possible image without description on input line 263.
 
-<M4-normalized-distro-gas.png, id=169, 431.4519pt x 328.8285pt>
-File: M4-normalized-distro-gas.png Graphic file (type png)
-<use M4-normalized-distro-gas.png>
-Package pdftex.def Info: M4-normalized-distro-gas.png  used on input line 274.
-(pdftex.def)             Requested size: 192.91872pt x 147.03317pt.
+<M4-transaction-value-top10.png, id=193, 427.8384pt x 583.2189pt>
+File: M4-transaction-value-top10.png Graphic file (type png)
+<use M4-transaction-value-top10.png>
+Package pdftex.def Info: M4-transaction-value-top10.png  used on input line 270
+.
+(pdftex.def)             Requested size: 192.91872pt x 262.98003pt.
 
-Class acmart Warning: A possible image without description on input line 277.
+Class acmart Warning: A possible image without description on input line 273.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4.4{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.en
-c} <./m4-correlation-matrix.png>]
-<M4-normalized-distro-gas-price.png, id=183, 431.4519pt x 328.8285pt>
+c} <./M4-correlation-matrix.png>]
+<M4-transaction-value-normalized.png, id=205, 406.1574pt x 297.0297pt>
+File: M4-transaction-value-normalized.png Graphic file (type png)
+<use M4-transaction-value-normalized.png>
+Package pdftex.def Info: M4-transaction-value-normalized.png  used on input lin
+e 277.
+(pdftex.def)             Requested size: 192.91872pt x 141.0815pt.
+
+
+Class acmart Warning: A possible image without description on input line 280.
+
+<M4-normalized-distro-gas.png, id=208, 431.4519pt x 328.8285pt>
+File: M4-normalized-distro-gas.png Graphic file (type png)
+<use M4-normalized-distro-gas.png>
+Package pdftex.def Info: M4-normalized-distro-gas.png  used on input line 289.
+(pdftex.def)             Requested size: 192.91872pt x 147.03317pt.
+
+Class acmart Warning: A possible image without description on input line 292.
+
+<M4-normalized-distro-gas-price.png, id=209, 431.4519pt x 328.8285pt>
 File: M4-normalized-distro-gas-price.png Graphic file (type png)
 <use M4-normalized-distro-gas-price.png>
 Package pdftex.def Info: M4-normalized-distro-gas-price.png  used on input line
- 281.
+ 296.
 (pdftex.def)             Requested size: 192.91872pt x 147.03317pt.
 
+Class acmart Warning: A possible image without description on input line 299.
 
-Class acmart Warning: A possible image without description on input line 284.
-
-<M4-transactions-timeplot.png, id=185, 455.301pt x 339.669pt>
+<M4-transactions-timeplot.png, id=211, 455.301pt x 339.669pt>
 File: M4-transactions-timeplot.png Graphic file (type png)
 <use M4-transactions-timeplot.png>
-Package pdftex.def Info: M4-transactions-timeplot.png  used on input line 291.
+Package pdftex.def Info: M4-transactions-timeplot.png  used on input line 306.
 (pdftex.def)             Requested size: 192.91872pt x 143.91945pt.
 
-Class acmart Warning: A possible image without description on input line 294.
+Class acmart Warning: A possible image without description on input line 309.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<M4-active-sender.png, id=188, 425.6703pt x 581.7735pt>
+ [5.5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.
+enc} <./M4-transaction-value-top10.png> <./M4-transaction-value-normalized.png>
+ <./M4-normalized-distro-gas.png> <./M4-normalized-distro-gas-price.png>]
+<M4-active-sender.png, id=227, 425.6703pt x 581.7735pt>
 File: M4-active-sender.png Graphic file (type png)
 <use M4-active-sender.png>
-Package pdftex.def Info: M4-active-sender.png  used on input line 301.
+Package pdftex.def Info: M4-active-sender.png  used on input line 316.
 (pdftex.def)             Requested size: 192.91872pt x 263.66873pt.
 
 
-Class acmart Warning: A possible image without description on input line 304.
+Class acmart Warning: A possible image without description on input line 319.
 
-<M4-active-receiver.png, id=189, 425.6703pt x 582.4962pt>
+<M4-active-receiver.png, id=228, 425.6703pt x 582.4962pt>
 File: M4-active-receiver.png Graphic file (type png)
 <use M4-active-receiver.png>
-Package pdftex.def Info: M4-active-receiver.png  used on input line 308.
+Package pdftex.def Info: M4-active-receiver.png  used on input line 323.
 (pdftex.def)             Requested size: 192.91872pt x 263.99626pt.
 
-Class acmart Warning: A possible image without description on input line 311.
+Class acmart Warning: A possible image without description on input line 326.
 
 
 Underfull \vbox (badness 4779) has occurred while \output is active []
 
- [5.5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.
-enc} <./M4-normalized-distro-gas.png> <./M4-normalized-distro-gas-price.png> <.
-/M4-transactions-timeplot.png> <./M4-active-sender.png>]
-<M4-nonce-distro.png, id=206, 425.6703pt x 328.8285pt>
+<M4-nonce-distro.png, id=230, 425.6703pt x 328.8285pt>
 File: M4-nonce-distro.png Graphic file (type png)
 <use M4-nonce-distro.png>
-Package pdftex.def Info: M4-nonce-distro.png  used on input line 320.
+Package pdftex.def Info: M4-nonce-distro.png  used on input line 335.
 (pdftex.def)             Requested size: 192.91872pt x 149.03015pt.
 
 
-Class acmart Warning: A possible image without description on input line 323.
+Class acmart Warning: A possible image without description on input line 338.
 
-(./progress-report.bbl)
+(./progress-report.bbl [6.6 <./M4-transactions-timeplot.png> <./M4-active-sende
+r.png> <./M4-active-receiver.png> <./M4-nonce-distro.png>])
 
 Class acmart Warning: Some images may lack descriptions.
 
@@ -1094,37 +1113,27 @@ Class acmart Warning: ACM reference format is mandatory
 
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
 (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [6.6 <./M4-active-receiver.png> <./M4-nonce-distro.png>] (./progress-report.a
-ux)
+) [7.7]
+(./progress-report.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `progress-report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `progress-report.out':
-(rerunfilecheck)             Before: DBC833A56A6D838F34EB6B0EA2FCD46D;5047
-(rerunfilecheck)             After:  DEBA1964C37DE3CEDD9DE105F1A6C0F4;5841.
+Package rerunfilecheck Info: File `progress-report.out' has not changed.
+(rerunfilecheck)             Checksum: A9DF82F128D109C80B3027DFD428F9C6;6022.
  ) 
 Here is how much of TeX's memory you used:
- 21135 strings out of 476025
- 343873 string characters out of 5790017
+ 21164 strings out of 476025
+ 344664 string characters out of 5790017
  1882388 words of memory out of 5000000
- 40673 multiletter control sequences out of 15000+600000
- 621250 words of font info for 275 fonts, out of 8000000 for 9000
+ 40693 multiletter control sequences out of 15000+600000
+ 621515 words of font info for 277 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 85i,12n,131p,1395b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,12n,131p,1395b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
 a-zi4r.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/Liberti
 neMathMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/L
@@ -1134,10 +1143,10 @@ rtine/LinBiolinumTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/
 libertine/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
 lic/libertine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
 1/public/newtx/txsys.pfb>
-Output written on progress-report.pdf (6 pages, 643080 bytes).
+Output written on progress-report.pdf (7 pages, 733701 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 54052 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 320 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 54110 words of extra memory for PDF output out of 61914 (max. 10000000)
 
