@@ -1,0 +1,100 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{5}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[{Ethereum Improvement Proposals}(2019)]%
+        {LondonHardfork}
+\bibfield{author}{\bibinfo{person}{{Ethereum Improvement Proposals}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{EIP-1559: Fee market change for ETH 1.0 chain}.
+\newblock
+  \bibinfo{howpublished}{\url{https://eips.ethereum.org/EIPS/eip-1559}}.
+\newblock
+\newblock
+\shownote{Accessed: 2024-12-04}.
+
+
+\bibitem[{Ethereum Improvement Proposals}(2022)]%
+        {ProtoDanksharding}
+\bibfield{author}{\bibinfo{person}{{Ethereum Improvement Proposals}}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{EIP-4844: Shard Blob Transactions}.
+\newblock
+  \bibinfo{howpublished}{\url{https://eips.ethereum.org/EIPS/eip-4844}}.
+\newblock
+\newblock
+\shownote{Accessed: 2024-12-04}.
+
+
+\bibitem[{Federal Bureau of Investigation}(2023)]%
+        {FBI2023}
+\bibfield{author}{\bibinfo{person}{{Federal Bureau of Investigation}}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{FBI Cryptocurrency Report}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.fbi.gov/services/laboratory/cryptocurrency-report}}.
+\newblock
+\newblock
+\shownote{Available at:
+  \url{https://www.fbi.gov/services/laboratory/cryptocurrency-report}}.
+
+
+\bibitem[{Homeland Defense \& Security Information Analysis Center}(2023)]%
+        {HDIAC2023}
+\bibfield{author}{\bibinfo{person}{{Homeland Defense \& Security Information
+  Analysis Center}}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Real-Time Cryptocurrencies Monitoring for Criminal
+  Activity Detection: A Comprehensive System}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.hdiac.org/cryptocurrency-fraud-detection}}.
+\newblock
+\newblock
+\shownote{Available at:
+  \url{https://www.hdiac.org/cryptocurrency-fraud-detection}}.
+
+
+\bibitem[{Infura, a Consensys Formation}(2024)]%
+        {InfuraURL}
+\bibfield{author}{\bibinfo{person}{{Infura, a Consensys Formation}}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Infura Homepage}.
+\newblock \bibinfo{howpublished}{\url{https://www.infura.io/}}.
+\newblock
+
+
+\end{thebibliography}
