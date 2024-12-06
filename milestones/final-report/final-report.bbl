@@ -37,13 +37,14 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
-\bibitem[{CoinMarketCap}(2024)]%
+\bibitem[{CoinGecko}(2024)]%
         {EthHistorical}
-\bibfield{author}{\bibinfo{person}{{CoinMarketCap}}.}
+\bibfield{author}{\bibinfo{person}{{CoinGecko}}.}
   \bibinfo{year}{2024}\natexlab{}.
-\newblock \bibinfo{title}{Ethereum Price History}.
+\newblock \bibinfo{title}{Ethereum USD (Historical Data) - August 17, 2015 to
+  May 10, 2016}.
 \newblock
-  \bibinfo{howpublished}{\url{https://coinmarketcap.com/currencies/ethereum/historical-data/}}.
+  \bibinfo{howpublished}{\url{https://www.coingecko.com/en/coins/ethereum/historical_data?start=2015-08-17&end=2016-05-10}}.
 \newblock
 \newblock
 \shownote{Accessed: 2024-12-06}.
