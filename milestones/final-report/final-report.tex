@@ -92,6 +92,50 @@ Recovery schemes involve representatives from fraudulent businesses claiming to 
 
 Knowing the existence of these scams and monitoring statistical metrics regarding cryptocurrency transactions and fraudulent activity is not sufficient to predict and prevent such scams. The Homeland Defense \& Security Information Analysis Center (HDIAC) has employed various real-time predictive machine learning models and on- and off-chain monitoring to detect fraudulent activity. The HDIAC describes the purpose of the off-chain module as preventing fraud before it occurs, whereas the on-chain module utilizes real-time surveillance to detect fraud after it has occurred \cite{HDIAC2023}.
 
+\section{Proposed Work}
+
+The work that we will need to perform in order to progress through this project involves \textbf{data preprocessing}, \textbf{exploratory data analysis}, \textbf{feature engineering}, \textbf{anomaly detection}, and \textbf{prediction modeling}.
+
+\subsection{Data Preprocessing}
+For data preprocessing, there are two steps that will need to be completed: \textbf{data cleaning and preparation}, and \textbf{normalization and standardization}. This can be achieved by handling any missing values in a variety of ways, such as:
+\begin{itemize}
+    \item \textbf{Dropping records} that cannot be filled in through integrating multiple sources.
+    \item \textbf{Filling in missing values} with a predetermined default value.
+    \item \textbf{Imputing missing values} based on similar records.
+\end{itemize}
+Additionally, the fields of each feature will need to be analyzed and converted to the correct \textbf{data types} and formats.
+
+\subsection{Exploratory Data Analysis}
+\textbf{Exploratory data analysis} will help us uncover inter- and intra-feature relationships. \textbf{Univariate analysis} and \textbf{visualization} will allow us to identify outliers and anomalous values. Visualizing a \textbf{heatmap} of the correlations between features will allow us to understand general trends between features.
+
+\subsection{Feature Engineering}
+An important step in feature engineering is deriving new attributes, such as:
+\begin{itemize}
+    \item New attributes for \textbf{transaction time intervals}, including \textbf{in-degree} and \textbf{out-degree} for sender and recipient addresses.
+    \item Grouping various features according to their \textbf{transaction patterns} and frequency.
+\end{itemize}
+
+\subsection{Anomaly Detection}
+One of the main objectives of this project is to detect anomalies that could potentially be fraudulent. Statistical methods such as \textbf{Z-score} and \textbf{Percentile-Based Detection} can be utilized to isolate transaction values of unusually high or low values. We can use the same methods to identify feature values that fall well outside the standard range.
+
+\textbf{Distance-based methods} can be employed to detect anomalies. By defining several dimensions such as \textbf{time\_between\_transactions} and \textbf{gas\_price} (based on gas and value), we can measure the distance between transactions and compare the record to its nearest neighbors using the \textbf{K-Nearest Neighbors (KNN)} methodology. Outliers here will also show interesting trends. 
+
+Using \textbf{K-means Clustering}, we can determine address behavior based on clusters by transaction activity, including:
+\begin{itemize}
+    \item \textbf{Total transaction value}
+    \item \textbf{Transaction frequency}
+    \item \textbf{Gas usage}
+\end{itemize}
+Addresses that fall into distant clusters or small clusters could indicate suspicious behavior.
+
+\subsection{Prediction Modeling}
+Finally, we propose \textbf{prediction modeling}. Using statistics defined in \textbf{FBI’s Internet Crime Complaint Annual Reports}, we will enhance our dataset by incorporating fraud patterns from FBI statistics, such as:
+\begin{itemize}
+    \item Prevalence of specific fraud types.
+    \item Trends in fraudulent activity over time.
+\end{itemize}
+Labeling the historical transaction data and using a \textbf{Random Forest} supervised machine learning model will help us discover potential fraudulent activity. Using real-time Ethereum data and our predictive models, we aim to \textbf{predict and mark transactions as potentially fraudulent} as they occur.
+
 
 \section{Data Set}
 
@@ -118,7 +162,82 @@ The attributes the transaction dataset contained were
     \item \texttt{blob\_versioned\_hashes}: Hex-valued addresses to the data storage blobs, as incorporated in EIP-4844 \cite{ProtoDanksharding}.
 \end{itemize}
 
-Due to the daily limits imposed on the Infura billing model, we were able to pull around 130,000 transactions in a 24-hour period over the course of several days.  
+Due to the daily limits imposed on the Infura billing model, we were able to pull around 130,000 transactions in a 24-hour period over the course of several days. 
+
+\section{Evaluation Methods}
+
+To quantitatively evaluate the performance of our fraud detection models, we will employ several metrics and methods:
+
+\subsection{Performance Metrics}
+We will assess model performance using standard classification metrics such as:
+\begin{itemize}
+    \item \textbf{Accuracy}: The ratio of correctly predicted instances over the total instances.
+    \item \textbf{Precision and Recall}: Critical in fraud detection, precision measures the fraction of actual frauds in the predicted fraud cases, while recall measures the fraction of actual frauds correctly identified. The \textbf{F1-Score}, a harmonic mean of precision and recall, will also be calculated to balance both.
+    \item \textbf{ROC Curve \& AUC}: We will use the ROC curve to visualize the trade-off between true positive and false positive rates and calculate the AUC as a quantitative measure of model discrimination.
+\end{itemize}
+
+\subsection{Cross-Validation}
+We will perform \textbf{k-fold cross-validation} to ensure that our model's performance generalizes well across different subsets of data. This will mitigate overfitting and provide more robust performance metrics.
+
+\subsection{Confusion Matrix}
+A \textbf{confusion matrix} will be generated to break down our predictions into true positives, false positives, true negatives, and false negatives. This allows us to analyze misclassifications in more detail.
+
+\subsection{Threshold Tuning}
+By adjusting the \textbf{decision threshold}, we will explore how varying thresholds impact precision and recall, allowing us to tune the model based on the relative costs of false positives and false negatives.
+
+\subsection{Anomaly Detection Metrics}
+For anomaly detection, we will calculate \textbf{Z-scores} and use \textbf{distance-based metrics} (e.g., K-Nearest Neighbors) to measure how well the model isolates outliers from the normal transaction patterns.
+
+\subsection{Scalability and Time Complexity}
+We will evaluate the \textbf{time complexity} of our models and their ability to scale by testing performance on progressively larger subsets of Ethereum transactions.
+
+\subsection{Feature Importance}
+Using a \textbf{Random Forest} model, we will assess the importance of various features (e.g., transaction amount, gas price, time intervals) in predicting fraudulent behavior. Feature importance scores will be used to identify the most impactful features.
+
+\subsection{Baseline Comparison}
+We will compare the performance of our models against simpler baselines such as logistic regression, measuring improvements in precision, recall, and AUC over the baseline models.
+
+\subsection{Statistical Significance}
+We will conduct \textbf{paired t-tests} and \textbf{ANOVA tests} to determine whether improvements in performance metrics between different models are statistically significant.
+
+\section{Tools}
+
+The programming language that we will use for this project is \textbf{Python}, the beloved language for data science projects. It has a vast ecosystem of libraries for data analysis and integrates well with third-party services. Two useful libraries for our objectives include \textbf{SciPy} and \textbf{NumPy}. Both extend Python to include a range of computing tools to handle matrix operations, statistical analysis, optimization, and signal processing. Additionally, the \textbf{Pandas} library will be necessary in our exploration of the data due to its ability to handle structured datasets. It will be useful in most steps of this project but will especially excel in data cleaning, EDA, and feature engineering.
+
+Due to the size of the dataset, we may encounter some limitations with Pandas’ processing speed. Due to the size of the Ethereum blockchain ledger, we will likely be viewing and previewing our work within small time frames to take advantage of Python and Pandas processing power alone. However, when evaluating larger time frames of Ethereum transactions, \textbf{Dask} will be necessary to parallelize Python processing.
+
+Visualization libraries such as \textbf{Matplotlib}, \textbf{Seaborn}, and \textbf{Plotly} will be greatly helpful in our data exploration and performance analysis. Data visualization will be necessary to display outliers and trends we uncover. Matplotlib will be useful for rudimentary visualizations, but we will likely reach for Seaborn for more control over aesthetics and Plotly for interactive visualizations.
+
+\textbf{GitHub} will be a necessary tool for this project, both from a grading perspective and as a way to manage multiple contributors to the same codebase by offering a single source of truth, backups, and trackable changes. Admittedly, the task for \textbf{Snowflake} may be beyond the need for this project, but due to the large volume of data in evaluating Ethereum transactions, we may need more scalability than our standard configuration.
+
+\section{Milestones}
+\textbf{Milestone 0: Proposal (October 14)}\\
+This encompasses parts 1 and 2 of the project requirements. This integrates any peer or instructor feedback from our initial proposal in order to finalize and improve our project proposition.
+
+\textbf{Milestone 1: Pull Dataset \& Data Cleaning (October 18)}\\
+In this milestone, we determine the specific windows of Ethereum transactions we will use for the project and clean them in order to successfully employ our data mining objectives.
+
+\textbf{Milestone 2 \& 3: EDA \& Feature Engineering (October 25)}\\
+This milestone will allow us to gain insights into the dataset and uncover important information regarding the features. This milestone is a crucial step toward uncovering patterns and relationships between features.
+
+\textbf{Milestone 4: Progress Report (October 28)}\\
+As required by the course, this will be a mid-project check-in as defined in part 3 of the project requirements. This will be a good chance for us to review our progress, review our plan, and reassess our goals.
+
+\textbf{Milestone 5: Anomaly Detection (November 8)}\\
+This milestone is another important step toward project completion. By this point, we should all have a decent understanding of the data and which attributes are most implicated in fraudulent transactions, and we can shift focus to understanding which metrics would indicate suspicious activity.
+
+\textbf{Milestone 6: Prediction Modeling \& Analysis (December 2)}\\
+Our goal to implement prediction modeling is contingent upon the successful completion of milestone 5. This milestone generally encompasses how we could apply the results of data mining in practice.
+
+\textbf{Milestone 7: Final Report (December 9)}\\
+As required by the course, this final report will highlight our procedures, findings, and next steps for this project. It will provide an opportunity to reflect on our processes, what did and did not work well, and provide an overview of our understanding of the material.
+
+
+\textbf{Milestone 8: Presentation (December 9)}\\
+As required by the course, this the final presentation of our findings. Originally omitted in the project proposal.
+
+\textbf{Milestone 9: Project \& Code Description (December 9)}\\
+As required by the course, this final code update for the project along with links to presentation, final report and outline of our findings. Originally omitted in the project proposal. 
 
 \section{Main Techniques Applied}
 
@@ -138,7 +257,7 @@ Other features had interesting data types that we hoped to normalize or convert 
 
 We then explored the statistical metrics of several of the features we considered to be highly likely to indicate fraud such as transaction value and gas usage. We generated graphs of these metrics to identify any outliers and visualize the skew of the values. In addition to exploring the general trends of the entire sample, we created visualizations that highlighted particularly interesting wallets. We hoped that this exploration would illuminate the variance of these features and provide us with ways to determine behavioral characteristics of these wallets.   
 
-Additionally, we generated and analyzed the correlation matrix of the features to identify interesting relationships between the features. Surprisingly, many of the features that we expected to be correlated with each other did not have any strong correlations. This indicated that our anomaly detection would need to consider a wider range of features to characterize potentially fraudulent behavior since no two or three features could reliably provide information about the expected trends of another. 
+Additionally, we generated and analyzed the correlation matrix of the features to identify interesting relationships between the features (Figure~\ref{fig:m4CorrelationMatrix}). Surprisingly, many of the features that we expected to be correlated with each other did not have any strong correlations. This indicated that our anomaly detection would need to consider a wider range of features to characterize potentially fraudulent behavior since no two or three features could reliably provide information about the expected trends of another. 
 
 \begin{figure}[H]
     \centering
@@ -149,6 +268,82 @@ Additionally, we generated and analyzed the correlation matrix of the features t
 
 The main goal of our feature engineering included gaining and understanding about the behaviors of specific wallets. We included features that allowed us to characterize the wallets as senders or receivers as well as gain insights into typical transaction and gas values for the wallets. By including these features related primarily to the value of the transactions, frequency of transactions, and the gas usage for specific wallets, we aimed to provide more specific information on individual practices. The goal of this was to apply these individualized characterizations to new transaction values where we could create warnings for users about interactions with other wallets or red flag behaviors within their own wallets. To generate these statistics, it was important to filter out the values where the value sent or received was 0, as this shows the direction of the transaction; if the from value is zero, the to value is nonzero meaning this transaction was sent from the wallet. 
 
+
+\subsubsection{Transaction values}
+Finding trends among transaction values will allow us to identify potentially fraudulent wallets and transactions. These graphs allow us to determine a baseline average transaction value and identify average transaction values for each sender. Figure~\ref{fig:transactionTop10} shows the senders with the 10 highest average transaction values in comparison with Figure~\ref{fig:transactionAll}, which shows all senders. Further analysis into the number of transactions that each of these senders has executed, as well as correlations with other features of the data set could help us to identify patterns in transaction values and sender types.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M6-transaction-value-top10.png}
+    \caption{Transaction value of the 10 most valuable transactions against the average transaction value.}
+    \label{fig:transactionTop10}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M6-transaction-value-normalized.png}
+    \caption{All transaction values against the average transaction value.}
+    \label{fig:transactionAll}
+\end{figure}
+
+\subsubsection{Gas distributions}
+Furthermore, tracking \texttt{gas} (the computational effort required to execute a transaction) is an interesting attribute to examine in correlation with transaction value. A high transaction value paired with low gas may reveal unique patterns, as could the inverse. In our initial EDA, we found no strong correlation between \texttt{gas} and \texttt{value}.
+
+We created several distributions of gas-related values, examining both \texttt{gas usage} (the total computational effort required for a transaction) in Figure~\ref{fig:gasUsage} and \texttt{gas price} (the amount a wallet is willing to pay to expedite transactions) in Figure~\ref{fig:gasPrice}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M6-normalized-distro-gas.png}
+    \caption{Distribution of gas usage, showing a high frequency in low gas prices. The outliers may reveal valuable insights.}
+    \label{fig:gasUsage}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M6-normalized-distro-gas-price.png}
+    \caption{Distribution of gas price, showing a high frequency in low gas prices. Wallets paying significantly more for faster transactions could indicate interesting trends.}
+    \label{fig:gasPrice}
+\end{figure}
+
+\subsubsection{Timeplot}
+While not directly useful, a time plot of transactions over time in Figure~\ref{fig:timePlot} demonstrates how a brief period represents approximately \( \approx 139,000 \) transactions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M6-transactions-timeplot.png}
+    \caption{Daily transactions between August 17, 2015, and September 13, 2015.}
+    \label{fig:timePlot}
+\end{figure}
+
+\subsubsection{Active wallets}
+Identifying the most active senders and receivers is highly informative. As mentioned earlier, fraud may occur within the margins (somewhere between the most and least frequent transactors). By identifying high-traffic vendors or entities, we can remove valid businesses from the dataset or magnify their holdings if they appear compromised. Figure~\ref{fig:activeSenders} shows the most active senders, and Figure~\ref{fig:activeReceivers} shows the most active receivers.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M6-active-sender.png}
+    \caption{10 most active sender wallets.}
+    \label{fig:activeSenders}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M6-active-receiver.png}
+    \caption{10 most active receiver wallets.}
+    \label{fig:activeReceivers}
+\end{figure}
+
+\subsubsection{Nonce distribution}
+We have also discovered the importance of the \texttt{nonce} attribute, which increments for each wallet with every transaction. We can use this to track wallets with a high degree of transactions, even if many of them occurred before the start of our observed window. This also allows us to identify wallets completing their first transaction. We believe both the maximum and minimum \texttt{nonce} values within a given window will reveal interesting trends.
+
+Examining the nonce distribution reveals a high degree of first-time senders, as shown in Figure~\ref{fig:nonceDistro}. This pattern may indicate a trend in creating "burner" wallets to avoid detection. Closer analysis of low-nonce transactions could provide more insight.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{M6-nonce-distro.png}
+    \caption{Distribution of nonce values, highlighting a high proportion of first-time senders.}
+    \label{fig:nonceDistro}
+\end{figure}
+
 The features that we engineered for this dataset included to and from frequency, the total and average values that the wallets received and sent, as well as the total and average gas used in sent and received transactions, and the price of the gas for sent and received transactions. Intuitively, transactions with high gas might indicate fraud because when an individual sets a high gas fee that they are willing to pay, it ensures that the transactions are prioritized and successful. Pump and dump schemes also often lead to spikes in gas fees. When executing transactions through a centralized exchange, the exchange includes the fees and gas considerations in the transaction fee, whereas executing transactions through the Ethereum network directly allows the user to set the gas fee. It would make sense that transactions that occur over the Ethereum network directly are more likely to be fraudulent than transactions that occur through a centralized exchange. By exploring the frequency of transactions, we hoped to uncover wallets that may be involved in pump and dump type activity where they may execute many transactions that leads to price gouging and sell off the resource when the price is inflated. 
 
 Finally, we engineered features that explored the interpersonal relationships of wallets. By identifying which wallets engaged in transactions with many other wallets, we hoped to create classifications for the type of wallet. For example, we hypothesized that wallets with a high number of distinct counterparties could represent wallets that executed transactions on behalf of a business, where the business may except Ethereum as a form of payment. We also hypothesized that wallets that executed many transactions with itself could be characterized as an investment account.  
@@ -156,18 +351,17 @@ Finally, we engineered features that explored the interpersonal relationships of
 Overall, the goal of our exploratory data analysis was to gain an understanding of the general trends and expected behaviors of Ethereum transactions, as well as to create a set of criteria that could potentially be used to classify wallets in regard to their individual transaction behaviors. 
 
 \subsection{Anomaly Detection}
-Our anomaly detection was highly reliant on comparisons between individual transactions and the expected behaviors identified by our statistical analysis and feature engineering. To explore these relationships, we decided that creating a set of reference visualizations would be useful. We compared several of our engineered features for individual wallets with the mean transaction values, gas used, and gas prices. These features were plotted against lines showing the value of the mean and the value of the upper bound for these features. The upper bounds for these metrics were calculated by adding the value of the third quartile to 1.5 times the interquartile range. Unfortunately, due to the presence of extreme outliers, the upper bound often fell below the value of the mean, however, these visualizations provided useful insights into a relative count of how many wallets fell outside of our generated expected values.  
-
-	These visualizations could then be used to compare the change in the expected behaviors of wallets over time. For example, trends that we have seen in cryptocurrencies is an increase in value over time. Our reference images were generated with data from the early life of Ethereum. Intuitively, we expected the average value of transactions in ETH for the entire dataset and individual wallets to decrease for data from later time periods. For example, the average price of Ethereum between 8/17/2015 and 9/13/2015 was between 0.87 and 1.35 USD and the average price of Ethereum between 8/17/2024 and 9/13/2024 was 2,223.93 and 2,769.10 USD. If a wallet’s average transaction value from 2015 was 100ETH, or about \$87 - \$135, we would expect the average transaction value of the same wallet in 2024 to be about 0.04ETH, ignoring potential changes in personal finances, inflation, etc. 
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\linewidth]{M6-2-avg-val.png}
     \caption{Scatter plots of average values sent and received.}
     \label{fig:m6StackedAvgVal}
 \end{figure}
+Our anomaly detection was highly reliant on comparisons between individual transactions and the expected behaviors identified by our statistical analysis and feature engineering. To explore these relationships, we decided that creating a set of reference visualizations would be useful. We compared several of our engineered features for individual wallets with the mean transaction values, gas used, and gas prices. These features were plotted against lines showing the value of the mean and the value of the upper bound for these features (Figure~\ref{fig:m6StackedAvgVal}). The upper bounds for these metrics were calculated by adding the value of the third quartile to 1.5 times the interquartile range. Unfortunately, due to the presence of extreme outliers, the upper bound often fell below the value of the mean, however, these visualizations provided useful insights into a relative count of how many wallets fell outside of our generated expected values.  
 
-The average gas that is used in transactions could also be used to help in characterizing types of transactions. Gas fees are determined by the resources needed in order to execute the type of transaction. For example, transferring Ethereum between two wallets is considered a basic transaction and typical fees are 21,000 gas units to complete the transaction. Looking at the typical gas used for transactions for each wallet could help us to identify what kinds of transactions each wallet often participates in and classify typical wallet behavior. This information could be used to flag whether a transaction is typical for a specific wallet.
+	These visualizations could then be used to compare the change in the expected behaviors of wallets over time. For example, trends that we have seen in cryptocurrencies is an increase in value over time. Our reference images were generated with data from the early life of Ethereum. Intuitively, we expected the average value of transactions in ETH for the entire dataset and individual wallets to decrease for data from later time periods. For example, the average price of Ethereum between 8/17/2015 and 9/13/2015 was between 0.87 and 1.35 USD and the average price of Ethereum between 8/17/2024 and 9/13/2024 was 2,223.93 and 2,769.10 USD. If a wallet’s average transaction value from 2015 was 100ETH, or about \$87 - \$135, we would expect the average transaction value of the same wallet in 2024 to be about 0.04ETH, ignoring potential changes in personal finances, inflation, etc. 
+
+The average gas that is used in transactions could also be used to help in characterizing types of transactions. Gas fees are determined by the resources needed in order to execute the type of transaction. For example, transferring Ethereum between two wallets is considered a basic transaction and typical fees are 21,000 gas units to complete the transaction. Looking at the typical gas used for transactions for each wallet could help us to identify what kinds of transactions each wallet often participates in and classify typical wallet behavior (Figure~\ref{fig:m6StackedAvgGasSent}). This information could be used to flag whether a transaction is typical for a specific wallet.
 
 \begin{figure}[H]
     \centering
@@ -180,7 +374,7 @@ The average gas that is used in transactions could also be used to help in chara
 \subsection{Prediction Modeling}
 We wished to expand on our anomaly detection by creating prediction models to generate an idea of whether a transaction is potentially fraudulent. We utilized K-Means to generate clusters based on our prior engineered features that give us insights into wallet behaviors. To visualize the separation of the clusters created by our trained K-Means models, we utilized PCA to reduce the dimensions to 2 and generate a scatter plot of the datapoints in the clusters.  
 
-Due to the nature of our problem in identifying transactions as fraudulent or not, we wanted to first consider a K-Means model with only 2 clusters with the hopes that it would accurately delineate between ‘likely fraudulent’ and ‘likely not fraudulent’. To get an idea of the relative accuracy and quality of the clusters for this model, we utilized the silhouette score. The silhouette score for our model with two clusters was very high, indicating that the clusters were well defined and separated from each other. We analyzed the values of the centroids for each feature to gain insights into the meanings of each cluster.  
+Due to the nature of our problem in identifying transactions as fraudulent or not, we wanted to first consider a K-Means model with only 2 clusters with the hopes that it would accurately delineate between ‘likely fraudulent’ and ‘likely not fraudulent’. To get an idea of the relative accuracy and quality of the clusters for this model, we utilized the silhouette score. The silhouette score for our model with two clusters was very high, indicating that the clusters were well defined and separated from each other. We analyzed the values of the centroids for each feature to gain insights into the meanings of each cluster (Figure~\ref{fig:k2Clusters}).  
 
 \begin{figure}[H]
     \centering
@@ -189,7 +383,7 @@ Due to the nature of our problem in identifying transactions as fraudulent or no
     \label{fig:k2Clusters}
 \end{figure}
 
-To optimize our model and generate the highest silhouette score, we followed the elbow method and generated a graph of the inertia of various K-Means models with different numbers of clusters. The inertia of the K-Means model is a measure of the distance between each data point and the cluster centroid, indicating how well the dataset is clustered. Following this elbow method, we identified that the lowest inertia, therefore best clustering, occurred in K-Means models with 5 to 8 clusters. We were curious about the separation of these model’s clusters, so we generated visualizations for models with 5, 6 and 8 clusters.
+To optimize our model and generate the highest silhouette score, we followed the elbow method and generated a graph of the inertia of various K-Means models with different numbers of clusters (Figure~\ref{fig:ElbowMethod}). The inertia of the K-Means model is a measure of the distance between each data point and the cluster centroid, indicating how well the dataset is clustered. Following this elbow method, we identified that the lowest inertia, therefore best clustering, occurred in K-Means models with 5 to 8 clusters. We were curious about the separation of these model’s clusters, so we generated visualizations for models with 5, 6 and 8 clusters.
 
 \begin{figure}[H]
     \centering
@@ -202,9 +396,9 @@ Following this elbow method, we identified that the lowest inertia, therefore be
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{M6-k-6.png}
-    \caption{K-Means with 6 clusters.}
-    \label{fig:k6Clusters}
+    \includegraphics[width=0.8\linewidth]{M6-k-8.png}
+    \caption{K-Means with 8 clusters.}
+    \label{fig:k8Clusters}
 \end{figure}
 
 \section{Key Results}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  6 DEC 2024 12:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  6 DEC 2024 13:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,101 +974,197 @@ r/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 102.
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 10
-2.
 
+Overfull \hbox (1.87068pt too wide) in paragraph at lines 114--115
+\T1/LinuxLibertineT-TLF/b/n/9 (-20) in-degree \T1/LinuxLibertineT-TLF/m/n/9 (-2
+0) and \T1/LinuxLibertineT-TLF/b/n/9 (-20) out-degree \T1/LinuxLibertineT-TLF/m
+/n/9 (-20) for sender and re-cip-i-ent ad-dresses. 
+ []
+
+
+Underfull \vbox (badness 2671) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 120.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 120.
+ [2.2]
+Overfull \hbox (6.90125pt too wide) in paragraph at lines 121--122
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) By defin-ing sev-eral di-men-sions such as 
+\T1/LinuxLibertineT-TLF/b/n/9 (-20) time_between_transactions
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 14
+6.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 102.
+(Font)              scaled to size 9.0pt on input line 146.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 116.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 116.
- [2.2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.en
-c}]
-Overfull \hbox (36.3306pt too wide) in paragraph at lines 117--118
+Overfull \hbox (36.3306pt too wide) in paragraph at lines 161--162
 []\T1/zi4/m/n/9 max_fee_per_blob_gas\T1/LinuxLibertineT-TLF/m/n/9 (-20) : The i
 n-te-ger value in Gwei the \T1/zi4/m/n/9 from_address
  []
 
+[3.3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc
+}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Overfull \hbox (10.25069pt too wide) in paragraph at lines 127--128
+ [4.4]
+Overfull \hbox (10.25069pt too wide) in paragraph at lines 246--247
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) newer at-tributes (\T1/zi4/m/n/9 max_fee_pe
 r_blob_gas\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 blob_versioned_ha
 shes\T1/LinuxLibertineT-TLF/m/n/9 (-20) ,
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 129.
-<M4-correlation-matrix.png, id=93, 451.6875pt x 397.485pt>
+(Font)              scaled to size 9.0pt on input line 248.
+<M4-correlation-matrix.png, id=174, 451.6875pt x 397.485pt>
 File: M4-correlation-matrix.png Graphic file (type png)
 <use M4-correlation-matrix.png>
-Package pdftex.def Info: M4-correlation-matrix.png  used on input line 145.
+Package pdftex.def Info: M4-correlation-matrix.png  used on input line 264.
 (pdftex.def)             Requested size: 192.91872pt x 169.7689pt.
 
-Class acmart Warning: A possible image without description on input line 148.
+Class acmart Warning: A possible image without description on input line 267.
 
-[3.3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.e
-nc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.en
-c} <./M4-correlation-matrix.png>]
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 273.
+[5.5{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.e
+nc} <./M4-correlation-matrix.png>]
+<M6-transaction-value-top10.png, id=186, 427.8384pt x 583.2189pt>
+File: M6-transaction-value-top10.png Graphic file (type png)
+<use M6-transaction-value-top10.png>
+Package pdftex.def Info: M6-transaction-value-top10.png  used on input line 277
+.
+(pdftex.def)             Requested size: 192.91872pt x 262.98003pt.
+
+
+Class acmart Warning: A possible image without description on input line 280.
+
+<M6-transaction-value-normalized.png, id=187, 411.939pt x 297.0297pt>
+File: M6-transaction-value-normalized.png Graphic file (type png)
+<use M6-transaction-value-normalized.png>
+Package pdftex.def Info: M6-transaction-value-normalized.png  used on input lin
+e 284.
+(pdftex.def)             Requested size: 192.91872pt x 139.10088pt.
+
+Class acmart Warning: A possible image without description on input line 287.
+
+<M6-normalized-distro-gas.png, id=190, 409.7709pt x 328.8285pt>
+File: M6-normalized-distro-gas.png Graphic file (type png)
+<use M6-normalized-distro-gas.png>
+Package pdftex.def Info: M6-normalized-distro-gas.png  used on input line 296.
+(pdftex.def)             Requested size: 192.91872pt x 154.81032pt.
+
+Class acmart Warning: A possible image without description on input line 299.
+
+<M6-normalized-distro-gas-price.png, id=191, 409.7709pt x 328.8285pt>
+File: M6-normalized-distro-gas-price.png Graphic file (type png)
+<use M6-normalized-distro-gas-price.png>
+Package pdftex.def Info: M6-normalized-distro-gas-price.png  used on input line
+ 303.
+(pdftex.def)             Requested size: 192.91872pt x 154.81032pt.
+
+Class acmart Warning: A possible image without description on input line 306.
+
+<M6-transactions-timeplot.png, id=193, 454.5783pt x 339.669pt>
+File: M6-transactions-timeplot.png Graphic file (type png)
+<use M6-transactions-timeplot.png>
+Package pdftex.def Info: M6-transactions-timeplot.png  used on input line 313.
+(pdftex.def)             Requested size: 192.91872pt x 144.15268pt.
+
+Class acmart Warning: A possible image without description on input line 316.
+
+[6.6 <./M6-transaction-value-top10.png> <./M6-transaction-value-normalized.png>
+ <./M6-normalized-distro-gas.png> <./M6-normalized-distro-gas-price.png>]
+<M6-active-sender.png, id=214, 431.4519pt x 582.4962pt>
+File: M6-active-sender.png Graphic file (type png)
+<use M6-active-sender.png>
+Package pdftex.def Info: M6-active-sender.png  used on input line 323.
+(pdftex.def)             Requested size: 192.91872pt x 260.45879pt.
+
+
+Class acmart Warning: A possible image without description on input line 326.
+
+<M6-active-receiver.png, id=215, 431.4519pt x 581.0508pt>
+File: M6-active-receiver.png Graphic file (type png)
+<use M6-active-receiver.png>
+Package pdftex.def Info: M6-active-receiver.png  used on input line 330.
+(pdftex.def)             Requested size: 192.91872pt x 259.81247pt.
+
+Class acmart Warning: A possible image without description on input line 333.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<M6-2-avg-val.png, id=106, 714.7503pt x 570.933pt>
+<M6-nonce-distro.png, id=217, 419.8887pt x 328.8285pt>
+File: M6-nonce-distro.png Graphic file (type png)
+<use M6-nonce-distro.png>
+Package pdftex.def Info: M6-nonce-distro.png  used on input line 342.
+(pdftex.def)             Requested size: 192.91872pt x 151.0823pt.
+
+
+Class acmart Warning: A possible image without description on input line 345.
+
+[7.7 <./M6-transactions-timeplot.png> <./M6-active-sender.png> <./M6-active-rec
+eiver.png> <./M6-nonce-distro.png>]
+<M6-2-avg-val.png, id=232, 714.7503pt x 570.933pt>
 File: M6-2-avg-val.png Graphic file (type png)
 <use M6-2-avg-val.png>
-Package pdftex.def Info: M6-2-avg-val.png  used on input line 165.
+Package pdftex.def Info: M6-2-avg-val.png  used on input line 356.
 (pdftex.def)             Requested size: 192.91872pt x 154.10168pt.
 
 
-Class acmart Warning: A possible image without description on input line 168.
+Class acmart Warning: A possible image without description on input line 359.
 
-<M6-2-avg-gas-sent.png, id=107, 714.7503pt x 570.933pt>
+<M6-2-avg-gas-sent.png, id=235, 714.7503pt x 570.933pt>
 File: M6-2-avg-gas-sent.png Graphic file (type png)
 <use M6-2-avg-gas-sent.png>
-Package pdftex.def Info: M6-2-avg-gas-sent.png  used on input line 174.
+Package pdftex.def Info: M6-2-avg-gas-sent.png  used on input line 368.
 (pdftex.def)             Requested size: 192.91872pt x 154.10168pt.
 
-Class acmart Warning: A possible image without description on input line 177.
+Class acmart Warning: A possible image without description on input line 371.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4.4 <./M6-2-avg-val.png>]
-<M6-k-2.png, id=114, 406.8801pt x 314.3745pt>
+ [8.8 <./M6-2-avg-val.png> <./M6-2-avg-gas-sent.png>]
+<M6-k-2.png, id=245, 406.8801pt x 314.3745pt>
 File: M6-k-2.png Graphic file (type png)
 <use M6-k-2.png>
-Package pdftex.def Info: M6-k-2.png  used on input line 187.
+Package pdftex.def Info: M6-k-2.png  used on input line 381.
 (pdftex.def)             Requested size: 192.91872pt x 149.056pt.
 
 
-Class acmart Warning: A possible image without description on input line 190.
+Class acmart Warning: A possible image without description on input line 384.
 
-<M6-elbow.png, id=115, 414.1071pt x 323.7696pt>
+<M6-elbow.png, id=247, 414.1071pt x 323.7696pt>
 File: M6-elbow.png Graphic file (type png)
 <use M6-elbow.png>
-Package pdftex.def Info: M6-elbow.png  used on input line 196.
+Package pdftex.def Info: M6-elbow.png  used on input line 390.
 (pdftex.def)             Requested size: 192.91872pt x 150.83784pt.
 
-Class acmart Warning: A possible image without description on input line 199.
+Class acmart Warning: A possible image without description on input line 393.
 
-<M6-k-6.png, id=116, 406.8801pt x 314.3745pt>
-File: M6-k-6.png Graphic file (type png)
-<use M6-k-6.png>
-Package pdftex.def Info: M6-k-6.png  used on input line 205.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<M6-k-8.png, id=248, 406.8801pt x 314.3745pt>
+File: M6-k-8.png Graphic file (type png)
+<use M6-k-8.png>
+Package pdftex.def Info: M6-k-8.png  used on input line 399.
 (pdftex.def)             Requested size: 192.91872pt x 149.056pt.
 
-Class acmart Warning: A possible image without description on input line 208.
 
-[5.5 <./M6-2-avg-gas-sent.png> <./M6-k-2.png> <./M6-elbow.png> <./M6-k-6.png>]
+Class acmart Warning: A possible image without description on input line 402.
+
+[9.9 <./M6-k-2.png> <./M6-elbow.png> <./M6-k-8.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1112,41 +1208,36 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [6.6]
+) [10.10]
 (./final-report.aux)
 
-Package rerunfilecheck Warning: File `final-report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `final-report.out':
-(rerunfilecheck)             Before: 64A27DCA073B7ED7F2BCC807DF2D2858;2300
-(rerunfilecheck)             After:  674F0C66520ACEFF95C455917570FB6D;2173.
+Package rerunfilecheck Info: File `final-report.out' has not changed.
+(rerunfilecheck)             Checksum: 87E51F34D4FC33E85CA3E4B6B68AD6E0;5238.
  ) 
 Here is how much of TeX's memory you used:
- 21053 strings out of 476025
- 341724 string characters out of 5790017
+ 21243 strings out of 476025
+ 346212 string characters out of 5790017
  1879388 words of memory out of 5000000
- 40648 multiletter control sequences out of 15000+600000
- 617801 words of font info for 251 fonts, out of 8000000 for 9000
+ 40725 multiletter control sequences out of 15000+600000
+ 630683 words of font info for 299 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 85i,12n,131p,1602b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{section.7} has been referenced but does not exist, 
-replaced by a fixed one
-
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-
-zi4r.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/LinBi
-olinumT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/Li
-nBiolinumTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertin
-e/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libe
-rtine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public
-/libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
-ublic/newtx/txsys.pfb>
-Output written on final-report.pdf (6 pages, 588546 bytes).
+ 85i,12n,131p,1602b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
+a-zi4r.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/newtx/Liberti
+neMathMI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertine/L
+inBiolinumT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libertin
+e/LinBiolinumTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libe
+rtine/LinBiolinumTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/
+libertine/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
+lic/libertine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
+1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts
+/type1/public/newtx/txsys.pfb>
+Output written on final-report.pdf (10 pages, 941547 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 55967 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 60239 words of extra memory for PDF output out of 61914 (max. 10000000)
 
