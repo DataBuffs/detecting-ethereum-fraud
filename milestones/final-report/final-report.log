@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  4 DEC 2024 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  6 DEC 2024 12:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -922,28 +922,28 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 66.
+(Font)              scaled to size 17.28pt on input line 69.
 LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF o
-n input line 66.
+n input line 69.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 uxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 66.
+(Font)              scaled to size 17.28pt on input line 69.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 66.
+(Font)              scaled to size 17.28pt on input line 69.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 66.
+(Font)              scaled to size 12.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 66.
+(Font)              scaled to size 10.0pt on input line 69.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 66.
+(Font)              scaled to size 10.0pt on input line 69.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -955,11 +955,17 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 66.
+(Font)              scaled to size 9.0pt on input line 69.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 66.
+(Font)              scaled to size 10.95pt on input line 69.
 
-Underfull \vbox (badness 6625) has occurred while \output is active []
+Overfull \hbox (8.44415pt too wide) in paragraph at lines 73--74
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) The goal of our project was to mine data fr
+om the Ethereum blockchain
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1.1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/us
 r/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr
@@ -967,15 +973,15 @@ r/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 99.
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 99
-.
+(Font)              scaled to size 9.0pt on input line 102.
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 10
+2.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 99.
+(Font)              scaled to size 9.0pt on input line 102.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
@@ -983,57 +989,111 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Overfull \hbox (36.3306pt too wide) in paragraph at lines 114--115
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 116.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 116.
+ [2.2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.en
+c}]
+Overfull \hbox (36.3306pt too wide) in paragraph at lines 117--118
 []\T1/zi4/m/n/9 max_fee_per_blob_gas\T1/LinuxLibertineT-TLF/m/n/9 (-20) : The i
 n-te-ger value in Gwei the \T1/zi4/m/n/9 from_address
  []
 
 
-Overfull \hbox (10.25069pt too wide) in paragraph at lines 124--125
+Overfull \hbox (10.25069pt too wide) in paragraph at lines 127--128
 \T1/LinuxLibertineT-TLF/m/n/9 (-20) newer at-tributes (\T1/zi4/m/n/9 max_fee_pe
 r_blob_gas\T1/LinuxLibertineT-TLF/m/n/9 (-20) , \T1/zi4/m/n/9 blob_versioned_ha
 shes\T1/LinuxLibertineT-TLF/m/n/9 (-20) ,
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 126.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 136.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 136.
-[2.2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc
-}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}]
+(Font)              scaled to size 9.0pt on input line 129.
+<M4-correlation-matrix.png, id=93, 451.6875pt x 397.485pt>
+File: M4-correlation-matrix.png Graphic file (type png)
+<use M4-correlation-matrix.png>
+Package pdftex.def Info: M4-correlation-matrix.png  used on input line 145.
+(pdftex.def)             Requested size: 192.91872pt x 169.7689pt.
 
-Overfull \hbox (162.02129pt too wide) in paragraph at lines 150--151
-\T1/LinuxLibertineT-TLF/m/n/9 (-20) dur-ing this time was 814,146 - 1,263,330 U
-SD (source : []$($[]https://coinmarketcap.com/currencies/ethereum/historical-
- []
+Class acmart Warning: A possible image without description on input line 148.
+
+[3.3{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.e
+nc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.en
+c} <./M4-correlation-matrix.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<M6-2-avg-val.png, id=106, 714.7503pt x 570.933pt>
+File: M6-2-avg-val.png Graphic file (type png)
+<use M6-2-avg-val.png>
+Package pdftex.def Info: M6-2-avg-val.png  used on input line 165.
+(pdftex.def)             Requested size: 192.91872pt x 154.10168pt.
+
+
+Class acmart Warning: A possible image without description on input line 168.
+
+<M6-2-avg-gas-sent.png, id=107, 714.7503pt x 570.933pt>
+File: M6-2-avg-gas-sent.png Graphic file (type png)
+<use M6-2-avg-gas-sent.png>
+Package pdftex.def Info: M6-2-avg-gas-sent.png  used on input line 174.
+(pdftex.def)             Requested size: 192.91872pt x 154.10168pt.
+
+Class acmart Warning: A possible image without description on input line 177.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3.3]
+ [4.4 <./M6-2-avg-val.png>]
+<M6-k-2.png, id=114, 406.8801pt x 314.3745pt>
+File: M6-k-2.png Graphic file (type png)
+<use M6-k-2.png>
+Package pdftex.def Info: M6-k-2.png  used on input line 187.
+(pdftex.def)             Requested size: 192.91872pt x 149.056pt.
+
+
+Class acmart Warning: A possible image without description on input line 190.
+
+<M6-elbow.png, id=115, 414.1071pt x 323.7696pt>
+File: M6-elbow.png Graphic file (type png)
+<use M6-elbow.png>
+Package pdftex.def Info: M6-elbow.png  used on input line 196.
+(pdftex.def)             Requested size: 192.91872pt x 150.83784pt.
+
+Class acmart Warning: A possible image without description on input line 199.
+
+<M6-k-6.png, id=116, 406.8801pt x 314.3745pt>
+File: M6-k-6.png Graphic file (type png)
+<use M6-k-6.png>
+Package pdftex.def Info: M6-k-6.png  used on input line 205.
+(pdftex.def)             Requested size: 192.91872pt x 149.056pt.
+
+Class acmart Warning: A possible image without description on input line 208.
+
+[5.5 <./M6-2-avg-gas-sent.png> <./M6-k-2.png> <./M6-elbow.png> <./M6-k-6.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 (./final-report.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 42--51
+Underfull \hbox (badness 10000) in paragraph at lines 54--63
 []\T1/LinuxLibertineT-TLF/m/n/7 (+20) Dev Ran-jan via Ethereum Stack-ex-change.
  2018.  Who has ac-cess
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--51
+Underfull \hbox (badness 10000) in paragraph at lines 54--63
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) to ethereum 0x00000000000000000000000000000
 00000000000 ad-dress?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--51
+Underfull \hbox (badness 10000) in paragraph at lines 54--63
 []$\T1/LinuxLibertineT-TLF/m/n/7 (+20) https : / / ethereum . stackexchange . c
 om / questions / 52908 / who -[] has -[] access -[] to -[]
  []
 
 )
+
+Class acmart Warning: Some images may lack descriptions.
+
 
 Class acmart Warning: ACM reference format is mandatory 
 (acmart)              for papers over one page. 
@@ -1044,15 +1104,15 @@ Class acmart Warning: ACM reference format is mandatory
 Class acmart Warning: CCS concepts are mandatory for papers over two pages.
 
 
-Overfull \vbox (1.127pt too high) has occurred while \output is active []
-
+Package balance Warning: You have called \balance in second column
+(balance)                Columns might not be balanced.
 
 (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 (/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [4.4]
+) [6.6]
 (./final-report.aux)
 
 Package rerunfilecheck Warning: File `final-report.out' has changed.
@@ -1060,19 +1120,19 @@ Package rerunfilecheck Warning: File `final-report.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `final-report.out':
-(rerunfilecheck)             Before: C6495E5AE503CFB5754CC1460CA31E5C;2406
-(rerunfilecheck)             After:  6AA2FA08E6147DFAC066A001F7D13986;2299.
+(rerunfilecheck)             Before: 64A27DCA073B7ED7F2BCC807DF2D2858;2300
+(rerunfilecheck)             After:  674F0C66520ACEFF95C455917570FB6D;2173.
  ) 
 Here is how much of TeX's memory you used:
- 20972 strings out of 476025
- 340061 string characters out of 5790017
+ 21053 strings out of 476025
+ 341724 string characters out of 5790017
  1879388 words of memory out of 5000000
- 40597 multiletter control sequences out of 15000+600000
- 616242 words of font info for 241 fonts, out of 8000000 for 9000
+ 40648 multiletter control sequences out of 15000+600000
+ 617801 words of font info for 251 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 85i,12n,131p,1602b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,12n,131p,1602b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{section.8} has been referenced but does not exist, 
+pdfTeX warning (dest): name{section.7} has been referenced but does not exist, 
 replaced by a fixed one
 
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-
@@ -1083,10 +1143,10 @@ e/LinLibertineT.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/libe
 rtine/LinLibertineTB.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public
 /libertine/LinLibertineTI.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
 ublic/newtx/txsys.pfb>
-Output written on final-report.pdf (4 pages, 387494 bytes).
+Output written on final-report.pdf (6 pages, 588546 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 53897 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 55967 words of extra memory for PDF output out of 61914 (max. 10000000)
 
