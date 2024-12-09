@@ -52,8 +52,11 @@ The knowledge that we gained during our data exploration and modeling provided u
 Future applications of the knowledge gained in this project includes generating a flagging system for users who trade Ethereum. Utilizing the behaviors and typical behaviors for wallets, we could generate a warning message for users who are about to engage in activity with wallets that are outside of the expected behavior of historical transactions as well as activity types for the specific wallet. 
 
 ## Final Presentation
+[Final Presentation Video](https://github.com/DataBuffs/detecting-ethereum-fraud/blob/main/07_DetectingMaliciousBehaviorsOnEthereum_Part6_video.mp4)
 
-## Final Report
+## Final Project Paper
+[Final Report](https://github.com/DataBuffs/detecting-ethereum-fraud/blob/main/07_DetectingMaliciousBehaviorsOnEthereum_Part4.pdf)
+
 
 
 
