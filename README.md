@@ -4,6 +4,32 @@ Group 7 (the DataBuffs)
 CSPB 4502
 CU Fall 2024
 
+## Navigating the Repository
+
+### Data
+The data folder is empty due to memory restrictions.
+In order to run our notebooks, 
+copy the repository into your local environment,
+download our data from LINK TO DRIVE
+
+
+### Milestones
+The milestones folder contains subdirectories for each deliverable milestone.
+All of the files related to each milestone is contained within its directory.
+A copy of the final report PDF can be located within the root level directory.
+
+### Scripts
+The scrips contained in this directory automate the process of pulling transaction data from the Ethereum ledger.
+
+### main.ipynb
+This is the jupyter notebook containing all of our code.
+This notebook can be run with different data subsets to analyze transaction data from different time periods.
+
+### main_alt.ipynb
+This notebook is a condensed verion of main.ipynb.
+This notebook trains and visualizes K-Means models without having to run all of the cells in main.ipynb.
+
+
 
 ## Getting Set Up
 
