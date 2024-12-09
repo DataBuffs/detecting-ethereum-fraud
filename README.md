@@ -8,9 +8,8 @@ CU Fall 2024
 
 ### Data
 The data folder is empty due to memory restrictions.
-In order to run our notebooks, 
-copy the repository into your local environment,
-download our data from LINK TO DRIVE
+In order to run our notebooks, copy the repository into your local environment and download our data from LINK TO DRIVE<br>
+Optionally, you can pull a new data subset directly by following the directions to pull Ethereum transactions locally below.
 
 
 ### Milestones
