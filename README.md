@@ -1,21 +1,24 @@
 # Detecting Malicious Behaviors on Ethereum
 
-Group 7 (the DataBuffs)
-CSPB 4502
-CU Fall 2024
+#### Group 7 (the DataBuffs)<br>
+BD Tinsley<br>
+Hallee Ray<br>
+
+CSPB 4502<br>
+CU Fall 2024<br>
 
 ## Navigating the Repository
 
 ### Data
 The data folder is empty due to memory restrictions.
-In order to run our notebooks, copy the repository into your local environment and download our data from LINK TO DRIVE<br>
-Optionally, you can pull a new data subset directly by following the directions to pull Ethereum transactions locally below.
+In order to run our notebooks, copy the repository into your local environment and download our data from [HERE](https://drive.google.com/file/d/1kFCydATvDrgzM55FABZuJysAZesSnjpp/view?usp=sharing).<br>
+Optionally, you can pull a new data subset directly by following the directions to pull Ethereum transactions locally. NOTE: Requires paid subscription
 
 
 ### Milestones
 The milestones folder contains subdirectories for each deliverable milestone.
 All of the files related to each milestone is contained within its directory.
-A copy of the final report PDF can be located within the root level directory.
+A copy of PDFs for each milestone can be located within the root level directory following the naming convention '07_DetectingMaliciousBehaviorsOnEthereum_Part#.pdf'.
 
 ### Scripts
 The scrips contained in this directory automate the process of pulling transaction data from the Ethereum ledger.
@@ -27,6 +30,30 @@ This notebook can be run with different data subsets to analyze transaction data
 ### main_alt.ipynb
 This notebook is a condensed verion of main.ipynb.
 This notebook trains and visualizes K-Means models without having to run all of the cells in main.ipynb.
+
+
+## Project Description
+The goal of our project was to elucidate a set of criteria that could potentially indicate fraudulent activity in Ethereum trading. By analyzing historical Ethereum transaction data, we aimed to generate models that could identify if a wallet was likely fraudulent or not.. With the rise of cryptocurrency, there is increasing concern regarding its validity and safety. Many scams and fraudulent activity have been reported and monitored, however, due to the decentralized and unregulated nature of cryptocurrency fraud and scams are common. 
+
+## Questions
+The questions that we sought to answer with our data mining process were aimed at understanding Ethereum transactions and building characterizations for Ethereum wallets. The goal of our project was to identify which wallets engage in fraudulent behavior. By creating a set of criteria for wallets that allow us to characterize them as likely fraudulent or not, we hoped to gain an understanding of uncommon behaviors to watch out for when analyzing transactions.
+
+1. Are there any interesting correlations between features?
+2. Are there any trends in how many transactions are executed per day across time?
+3. What is the expected range of transaction values for specific time periods?
+4. What wallets make the most transactions, and how often?
+
+We hoped that by analyzing these specific questions, we would be able to gain a deeper understanding of Ethereum transactions and wallet behaviors and improve our ability to predict whether a transaction is likely to be fraudulent. These questions allowed us to generate several variables that we used as reference points for determining if a transaction or wallet behavior was suspicious.
+
+
+## Applications
+The knowledge that we gained during our data exploration and modeling provided us with insights with which we could apply to other datasets and time periods to hypothesize whether any transactions are likely fraudulent. With additional information regarding known fraudulent activity, we could extend our modeling to include supervised models that could classify a transaction as fraudulent or not, instead of describing the transaction in terms of activity and behavior. 
+
+Future applications of the knowledge gained in this project includes generating a flagging system for users who trade Ethereum. Utilizing the behaviors and typical behaviors for wallets, we could generate a warning message for users who are about to engage in activity with wallets that are outside of the expected behavior of historical transactions as well as activity types for the specific wallet. 
+
+## Final Presentation
+
+## Final Report
 
 
 
