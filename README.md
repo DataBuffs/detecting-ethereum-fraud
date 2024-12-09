@@ -11,7 +11,7 @@ CU Fall 2024<br>
 
 ### Data
 The data folder is empty due to memory restrictions.
-In order to run our notebooks, copy the repository into your local environment and download our data from [HERE](https://drive.google.com/file/d/1kFCydATvDrgzM55FABZuJysAZesSnjpp/view?usp=sharing).<br>
+In order to run our notebooks, copy the repository into your local environment and download our data from [HERE](https://drive.google.com/file/d/1kFCydATvDrgzM55FABZuJysAZesSnjpp/view?usp=sharing). NOTE: This zip file is 5GB, the unzipped folder is nearly 10GB.<br>
 Optionally, you can pull a new data subset directly by following the directions to pull Ethereum transactions locally. NOTE: Requires paid subscription
 
 
